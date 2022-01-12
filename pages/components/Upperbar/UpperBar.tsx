@@ -2,7 +2,7 @@ import '@fortawesome/fontawesome-svg-core/styles.css';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
-export function UpperBar() {
+function UpperBar() {
 
     return (
         <>
@@ -23,3 +23,5 @@ export function UpperBar() {
         </>
     )
 }
+
+export default UpperBar
