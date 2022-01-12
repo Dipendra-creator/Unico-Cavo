@@ -3,6 +3,8 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import UpperBar from "./components/Upperbar/UpperBar";
+import NavBar from "./components/Navbar/NavBar";
+import LoginSignup from "./components/LoginSignup/LoginSignup";
 const Home: NextPage = () => {
   return (
     <>
@@ -10,7 +12,10 @@ const Home: NextPage = () => {
         <UpperBar />
         {/*END OF UPPER BAR*/}
 
-        {/* START OF NAVBAR   */}
+        {/* START OF NAVBAR */}
+        <NavBar />
+        {/* END OF NAVBAR */}
+
     </>
   )
 }
