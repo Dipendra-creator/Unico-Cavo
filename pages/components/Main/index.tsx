@@ -5,13 +5,7 @@ import AwesomeSlider from 'react-awesome-slider';
 import 'react-awesome-slider/dist/styles.css';
 import 'react-awesome-slider/dist/custom-animations/cube-animation.css';
 
-
-import wire1 from "../../../public/static/images/1.jpg"
-import wire2 from "../../../public/static/images/2.jpg"
-import wire3 from "../../../public/static/images/3.jpg"
-import wire4 from "../../../public/static/images/4.jpg"
-
-function Main() {
+export default function Main() {
     return (
         <>
             <section className="text-gray-600 body-font">
@@ -52,9 +46,6 @@ function Main() {
             {/*    <SwiperSlide>Slide 8</SwiperSlide>*/}
             {/*    <SwiperSlide>Slide 9</SwiperSlide>*/}
             {/*</Swiper>*/}
-
         </>
     )
 }
-
-export default Main

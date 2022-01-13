@@ -1,8 +1,9 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faUser, faSearch, faCartPlus, faAngleLeft, faAngleDown} from '@fortawesome/free-solid-svg-icons'
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome"
+import {faUser, faSearch, faCartPlus, faAngleLeft} from '@fortawesome/free-solid-svg-icons'
 
 
-function NavBar() {
+
+export default function Navbar() {
     return (
         <>
             <header className={"header"}>
@@ -41,13 +42,13 @@ function NavBar() {
                         </div>
                         <div className="header-item item-right">
                             <a href="#" className="search">
-                                <FontAwesomeIcon icon={faSearch} />
+                                <FontAwesomeIcon icon={faSearch}/>
                             </a>
                             <a href="#" className="user">
-                                <FontAwesomeIcon icon={faUser} />
+                                <FontAwesomeIcon icon={faUser}/>
                             </a>
                             <a href="#">
-                                <FontAwesomeIcon icon={faCartPlus} />
+                                <FontAwesomeIcon icon={faCartPlus}/>
                             </a>
                             <div className="mobile-menu-trigger">
                                 <span/>
@@ -61,4 +62,3 @@ function NavBar() {
     )
 }
 
-export default NavBar

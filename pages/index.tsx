@@ -1,7 +1,7 @@
 import type { NextPage } from 'next'
-import UpperBar from "./components/Upperbar/UpperBar";
-import NavBar from "./components/Navbar/NavBar";
-import Main from './components/Main/Main';
+import UpperBar from "./components/Upperbar";
+import Navbar from "./components/Navbar";
+import Main from './components/Main';
 const Home: NextPage = () => {
   return (
     <>
@@ -10,7 +10,7 @@ const Home: NextPage = () => {
         {/*END OF UPPER BAR*/}
 
         {/* START OF NAVBAR */}
-        <NavBar />
+        <Navbar />
         {/* END OF NAVBAR */}
 
         {/* START OF MAIN */}

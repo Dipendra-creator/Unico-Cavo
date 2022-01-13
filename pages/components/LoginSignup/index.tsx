@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import {faTimes} from '@fortawesome/free-solid-svg-icons'
 
-function LoginSignup() {
+function Index() {
     return (
         <>
 
@@ -9,4 +9,4 @@ function LoginSignup() {
     )
 }
 
-export default LoginSignup
+export default Index
