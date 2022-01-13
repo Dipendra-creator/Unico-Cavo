@@ -1,10 +1,7 @@
 import type { NextPage } from 'next'
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/Home.module.css'
 import UpperBar from "./components/Upperbar/UpperBar";
 import NavBar from "./components/Navbar/NavBar";
-import LoginSignup from "./components/LoginSignup/LoginSignup";
+import Main from './components/Main/Main';
 const Home: NextPage = () => {
   return (
     <>
@@ -16,6 +13,9 @@ const Home: NextPage = () => {
         <NavBar />
         {/* END OF NAVBAR */}
 
+        {/* START OF MAIN */}
+        <Main />
+        {/* END OF MAIN */}
     </>
   )
 }
