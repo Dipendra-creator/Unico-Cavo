@@ -1,8 +1,6 @@
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome"
 import {faUser, faSearch, faCartPlus, faAngleLeft} from '@fortawesome/free-solid-svg-icons'
 
-
-
 export default function Navbar() {
     return (
         <>
@@ -10,7 +8,7 @@ export default function Navbar() {
                 <div className="container">
                     <div className="row v-center">
                         <div className="header-item item-left">
-                            <div className="logo"><a href="#">UnicoKabol</a></div>
+                            <div className="logo"><a href="#">Unico Cavo</a></div>
                         </div>
                         <div className="header-item item-center">
                             <div className="menu-overlay"/>
@@ -57,7 +55,6 @@ export default function Navbar() {
                     </div>
                 </div>
             </header>
-
         </>
     )
 }

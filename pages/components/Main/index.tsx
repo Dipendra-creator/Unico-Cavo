@@ -9,13 +9,13 @@ export default function Main() {
     return (
         <>
             <section className="text-gray-600 body-font">
-                <div className="main">
+                <div>
                     <div className="flex flex-col text-center w-full mb-12">
                         <h1 className="heading backdrop-blur-xl:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">
                             Welcome to Unico Cavo
                         </h1>
                         <p className="pera lg mx-auto leading-relaxed text-base">
-                            A LEADING WIRE AND CABLES MANUFACTURERS WITH QUALITY PRODUCTS.
+                            A leading wire and cables manufacturers with quality products.
                         </p>
                     </div>
                     <AwesomeSlider>
