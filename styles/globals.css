@@ -2,33 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
-  font-family: "Eina";
-  /*src: url("/fonts/Eina.otf");*/
-}
-
-
-@font-face {
-  font-family: "Eina Light";
-  /*src: url("/fonts/Eina-Light.otf");*/
-}
-
-@font-face {
-  font-family: "Eina SemiBold";
-  /*src: url("/fonts/Eina-SemiBold.otf");*/
-}
-
-@layer base {
-  p, h1, h2, h3, h4, h5 {
-    color: rgba(0, 0, 0, .8);
-    font-family: Eina;
-  }
-}
-
-.Toastify__progress-bar--default {
-  background: #89bdf9 !important;
-}
-
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -238,11 +211,9 @@ a {
 /* Main */
 .main {
   /*margin-top: 0;*/
-  width: 1920px;
-  height: 620px;
   padding-top: 20px;
   padding-bottom: 20px;
-  /*margin: 2%;*/
+  margin: 2%;
   justify-content: center;
   align-content: center;
 }
@@ -319,8 +290,3 @@ a {
     margin-top: 10px;
   }
 }
-
-/*.mimg {*/
-/*  height: 8px;*/
-/*  width: 12px;*/
-/*}*/
