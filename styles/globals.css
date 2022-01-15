@@ -1,27 +1,28 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 @font-face {
     font-family: "Eina";
-    src: url("/fonts/Eina.otf");
+    src: url("/public/fonts/Eina.otf");
 }
 
 
 @font-face {
     font-family: "Eina Light";
-    src: url("/fonts/Eina-Light.otf");
+    src: url("/public/fonts/Eina-Light.otf");
 }
 
 @font-face {
     font-family: "Eina SemiBold";
-    src: url("/fonts/Eina-SemiBold.otf");
+    src: url("/public/fonts/Eina-SemiBold.otf");
 }
 
 @layer base {
     p, h1, h2, h3, h4, h5 {
         color: rgba(0, 0, 0, .8);
-        font-family: Eina;
+        font-family: 'Montserrat', sans-serif;
     }
 }
 

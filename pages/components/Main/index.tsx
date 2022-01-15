@@ -165,7 +165,7 @@ export default function Main() {
                 <h2 className="text-4xl mb-3">Trending Now</h2>
                 <p className="text-gray-600 text-sm">Find the perfect piece or accessory to finish off your favorite room in the house.</p>
             </div>
-            <div className="my-8 flex flex-col lg:flex-row justify-between">
+            <div className="ml-20 mr-20 my-8 flex flex-col lg:flex-row justify-between sm: ml-2 mr-2">
                 <DisplaySmall
                     imageSrc={a}
                     title={"inventory[0].name"}

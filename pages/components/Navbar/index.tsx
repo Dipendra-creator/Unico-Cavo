@@ -1,8 +1,10 @@
 import Link from "next/link";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faPhone } from '@fortawesome/free-solid-svg-icons'
 
 export default function Navbar() {
     return (
-        <nav className="flex justify-center">
+        <nav className="flex container mt-0">
             <div className="sm:px-12 sm:flex-row sm:pt-12 sm:pb-6 2xl:px-0 px-4 pt-8 flex flex-col w-fw ">
                 <div className="mb-4 sm:mr-16 max-w-48 sm:max-w-none">
                     <Link href="/">
@@ -17,22 +19,30 @@ export default function Navbar() {
                     </Link>
                     {/* TODO: Fix Links */}
                     <p className=" sm:mr-8 sm:mb-0 mb-4 text-left text-smaller mr-4 ">Home</p>
-                    <a aria-label="new arrivals" href="/category/new-arrivals">
+                    <a aria-label="new arrivals" href="#">
                         <p className=" sm:mr-8 sm:mb-0 mb-4 text-left text-smaller mr-4 ">New arrivals</p>
                     </a>
-                    <a aria-label="sofas" href="/category/sofas">
+                    <a aria-label="sofas" href="#">
                         <p className=" sm:mr-8 sm:mb-0 mb-4 text-left text-smaller mr-4 ">Cables</p>
                     </a>
-                    <a aria-label="living room" href="/category/living-room">
+                    <a aria-label="living room" href="#">
                         <p className=" sm:mr-8 sm:mb-0 mb-4 text-left text-smaller mr-4 ">Products</p>
                     </a>
-                    <a aria-label="on sale" href="/category/on-sale">
+                    <a aria-label="on sale" href="#">
                         <p className=" sm:mr-8 sm:mb-0 mb-4 text-left text-smaller mr-4 ">Contact Us</p>
                     </a>
-                    <a aria-label="chairs" href="/category/chairs">
+                    <a aria-label="chairs" href="#">
                         <p className=" sm:mr-8 sm:mb-0 mb-4 text-left text-smaller mr-4 ">About Us</p>
                     </a>
+
+
                 </div>
+
+            </div>
+            <div className="flex flex-1 justify-end relative items-center">
+                <p>+91256482566</p>
+                <div className="w-2"/>
+                <FontAwesomeIcon icon={faPhone} height={"20px"}/>
             </div>
         </nav>
     )
