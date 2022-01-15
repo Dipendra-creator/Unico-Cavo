@@ -6,6 +6,7 @@ import Image from "next/image";
 import a from "../../../public/static/images/wire1.png"
 import Link from 'next/link'
 
+
 // @ts-ignore
 function Button({ title, onClick, full = false }) {
     let classNames = "text-sm font-bold tracking-wider bg-transparent hover:bg-black text-black font-semibold hover:text-white py-4 px-12 border-2 border-black hover:border-transparent"
