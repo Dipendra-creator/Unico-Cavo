@@ -108,15 +108,15 @@ function getTrimmedString(string, length = 8) {
 
 // @ts-ignore
 function titleIfy(slug) {
-    var words = slug.split('-')
-    for (var i = 0; i < words.length; i++) {
-        var word = words[i]
+    const words = slug.split('-');
+    for (let i = 0; i < words.length; i++) {
+        const word = words[i];
         words[i] = word.charAt(0).toUpperCase() + word.slice(1)
     }
     return words.join(' ')
 }
 
-function Main() {
+export default function Main() {
     return (
         <>
             <section className="text-gray-600 body-font">
@@ -133,7 +133,7 @@ function Main() {
                 <div className="bg-red-400 p-6 pb-10 smpb-6 flex lg:flex-row flex-col container px-2  mx-auto">
                     <div className="pt-4 pl-2 sm:pt-12 sm:pl-12 flex flex-col">
                         <Tag year="2021" category="Coaxials" />
-                        <Center price="200" title={"Wire"} link={`#`} />
+                        <Center price="200" title={"Mod Leather Sofa"} link={`#`} />
                         <Footer designer="Jason Bourne" />
                     </div>
                     <div className="flex flex-1 justify-center items-center relative">
@@ -200,4 +200,3 @@ function Main() {
     )
 }
 
-export default Main

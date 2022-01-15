@@ -2,7 +2,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faUser, faSearch, faCartPlus, faAngleLeft, faAngleDown} from '@fortawesome/free-solid-svg-icons'
 
 
-function NavBar() {
+export default function NavBar() {
     return (
         <>
             <header className={"header"}>
@@ -14,10 +14,10 @@ function NavBar() {
                         <div className="header-item item-center">
                             <div className="menu-overlay"/>
                             <nav className="menu">
-                                <div className="mobile-menu-head">
+                                <div className="sm-menu-head">
                                     <div className="go-back"><FontAwesomeIcon icon={faAngleLeft}/></div>
                                     <div className="current-menu-title"/>
-                                    <div className="mobile-menu-close">&times;</div>
+                                    <div className="sm-menu-close">&times;</div>
                                 </div>
                                 <ul className="menu-main">
                                     <li>
@@ -49,7 +49,7 @@ function NavBar() {
                             <a href="#">
                                 <FontAwesomeIcon icon={faCartPlus} />
                             </a>
-                            <div className="mobile-menu-trigger">
+                            <div className="sm-menu-trigger">
                                 <span/>
                             </div>
                         </div>
@@ -60,5 +60,3 @@ function NavBar() {
         </>
     )
 }
-
-export default NavBar

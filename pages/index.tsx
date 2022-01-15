@@ -1,23 +1,24 @@
-import type { NextPage } from 'next'
-import UpperBar from "./components/Upperbar/UpperBar";
-import NavBar from "./components/Navbar/NavBar";
-import Main from './components/Main/Main';
+import type {NextPage} from 'next'
+import NavigationBar from "./components/Upperbar";
+import NavBar from "./components/Navbar";
+import Main from './components/Main';
+import Head from 'next/head'
+import Footer from "./components/Footer";
+
 const Home: NextPage = () => {
-  return (
-    <>
-        {/*UPPER BAR*/}
-        <UpperBar />
-        {/*END OF UPPER BAR*/}
-
-        {/* START OF NAVBAR */}
-        <NavBar />
-        {/* END OF NAVBAR */}
-
-        {/* START OF MAIN */}
-        <Main />
-        {/* END OF MAIN */}
-    </>
-  )
+    return (
+        <>
+            <Head>
+                <title>Unico Cavo</title>
+                <meta name="description" content="Jamstack ECommerce Next provides a way to quickly get up and running with a fully configurable ECommerce site using Next.js." />
+                <meta property="og:title" content="Jamstack ECommerce" key="title" />
+            </Head>
+            {/*<NavigationBar/>*/}
+            <NavBar/>
+            <Main/>
+            <Footer/>
+        </>
+    )
 }
 
 export default Home

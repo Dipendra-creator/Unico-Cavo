@@ -4,18 +4,18 @@
 
 @font-face {
   font-family: "Eina";
-  /*src: url("/fonts/Eina.otf");*/
+  src: url("/fonts/Eina.otf");
 }
 
 
 @font-face {
   font-family: "Eina Light";
-  /*src: url("/fonts/Eina-Light.otf");*/
+  src: url("/fonts/Eina-Light.otf");
 }
 
 @font-face {
   font-family: "Eina SemiBold";
-  /*src: url("/fonts/Eina-SemiBold.otf");*/
+  src: url("/fonts/Eina-SemiBold.otf");
 }
 
 @layer base {
@@ -235,7 +235,7 @@ a {
   visibility: hidden;
 }
 
-/* Main */
+/* Index */
 .main {
   /*margin-top: 0;*/
   width: 1920px;
@@ -262,8 +262,8 @@ a {
   }
 }
 
-.mobile-menu-head,
-.mobile-menu-trigger{
+.mobilae-menu-head,
+.mobilae-menu-trigger{
   display: none;
 }
 
