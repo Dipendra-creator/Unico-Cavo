@@ -136,8 +136,8 @@ export default function Main() {
                 <div className="bg-red-400 p-6 pb-10 smpb-6 flex lg:flex-row flex-col container px-2  mx-auto">
                     <div className="pt-4 pl-2 sm:pt-12 sm:pl-12 flex flex-col">
                         <Tag year="2021" category="Coaxials" />
-                        <Center price="200" title={"Mod Leather Sofa"} link={`#`} />
-                        <Footer designer="Jason Bourne" />
+                        <Center price="200" title={"Premium Wires"} link={`#`} />
+                        <Footer designer="Aashendra Rajput" />
                     </div>
                     <div className="flex flex-1 justify-center items-center relative">
                         <div className="z-10">
