@@ -6,6 +6,7 @@ import Head from 'next/head'
 import Footer from "./components/Footer";
 
 const Home: NextPage = () => {
+
     return (
         <>
             <Head>

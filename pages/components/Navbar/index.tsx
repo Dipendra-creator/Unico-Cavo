@@ -40,7 +40,9 @@ export default function Navbar() {
 
             </div>
             <div className="flex flex-1 justify-end relative items-center">
-                <p>+91256482566</p>
+                <a href={"tel:+918533001308"}>
+                    <p>+91256482566</p>
+                </a>
                 <div className="w-2"/>
                 <FontAwesomeIcon icon={faPhone} height={"20px"}/>
             </div>

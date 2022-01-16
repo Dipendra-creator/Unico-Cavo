@@ -3,7 +3,10 @@ import { } from '@fortawesome/free-solid-svg-icons'
 import 'react-awesome-slider/dist/styles.css';
 import 'react-awesome-slider/dist/custom-animations/cube-animation.css';
 import Image from "next/image";
-import a from "../../../public/static/images/wire1.png"
+import wire1 from "../../../public/static/images/wire1.png"
+import wire2 from "../../../public/static/images/wire2.png"
+import wire3 from "../../../public/static/images/wire3.png"
+import wire4 from "../../../public/static/images/wire4.png"
 import Link from 'next/link'
 
 
@@ -138,7 +141,7 @@ export default function Main() {
                     </div>
                     <div className="flex flex-1 justify-center items-center relative">
                         <div className="z-10">
-                            <Image src={a} className="w-136" alt="Showcase item" />
+                            <Image src={wire1} className="w-136" alt="Showcase item" />
                         </div>
                         <div className="absolute w-48 h-48 sm:w-72 sm:h-72 xl:w-88 xl:h-88 bg-blue-300 z-0 rounded-full" />
                     </div>
@@ -149,13 +152,13 @@ export default function Main() {
 
             <div className=" container mx-auto lg:my-8 lg:grid-cols-2 grid-cols-1 grid gap-4 my-4">
                 <DisplayMedium
-                    imageSrc={a}
+                    imageSrc={wire2}
                     subtitle={`50 items`}
                     title={titleIfy("Wires")}
                     link={`#`}
                 />
                 <DisplayMedium
-                    imageSrc={a}
+                    imageSrc={wire3}
                     subtitle={`50 items`}
                     title={titleIfy("Wires")}
                     link={`#`}
@@ -167,28 +170,28 @@ export default function Main() {
             </div>
             <div className="ml-20 mr-20 my-8 flex flex-col lg:flex-row justify-between sm: ml-2 mr-2">
                 <DisplaySmall
-                    imageSrc={a}
+                    imageSrc={wire1}
                     title={"inventory[0].name"}
                     subtitle={"inventory[0].categories[0]"}
                     link={`#`}
                 />
 
                 <DisplaySmall
-                    imageSrc={a}
+                    imageSrc={wire2}
                     title={"inventory[0].name"}
                     subtitle={"inventory[0].categories[0]"}
                     link={`#`}
                 />
 
                 <DisplaySmall
-                    imageSrc={a}
+                    imageSrc={wire3}
                     title={"inventory[0].name"}
                     subtitle={"inventory[0].categories[0]"}
                     link={`#`}
                 />
 
                 <DisplaySmall
-                    imageSrc={a}
+                    imageSrc={wire4}
                     title={"inventory[0].name"}
                     subtitle={"inventory[0].categories[0]"}
                     link={`#`}
