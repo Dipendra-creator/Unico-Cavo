@@ -2,6 +2,7 @@ import NavBar from "./components/Navbar";
 import Main from './components/Main';
 import Head from 'next/head'
 import Footer from "./components/Footer";
+import ContactUS from "./components/Contact Us";
 
 export default function Home() {
     return (
@@ -15,6 +16,7 @@ export default function Home() {
             {/*<NavigationBar/>*/}
             <NavBar/>
             <Main/>
+            <ContactUS/>
             <Footer/>
         </>
     )
