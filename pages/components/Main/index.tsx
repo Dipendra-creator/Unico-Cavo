@@ -3,10 +3,10 @@ import { } from '@fortawesome/free-solid-svg-icons'
 import 'react-awesome-slider/dist/styles.css';
 import 'react-awesome-slider/dist/custom-animations/cube-animation.css';
 import Image from "next/image";
-import wire1 from "../../../public/static/images/wire1.png"
-import wire2 from "../../../public/static/images/wire2.png"
-import wire3 from "../../../public/static/images/wire3.png"
-import wire4 from "../../../public/static/images/wire4.png"
+import wire1 from "@/images/wire1.png"
+import wire2 from "@/images/wire2.png"
+import wire3 from "@/images/wire3.png"
+import wire4 from "@/images/wire4.png"
 import Link from 'next/link'
 
 
