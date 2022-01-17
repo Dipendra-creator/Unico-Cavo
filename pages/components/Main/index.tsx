@@ -9,71 +9,75 @@ import wire3 from "@/images/wire3.png"
 import wire4 from "@/images/wire4.png"
 
 
-// @ts-ignore
-export function Button({ title, onClick, full = false }) {
+export function Button(x: {
+    title: string | undefined;
+    onClick: any;
+    full: boolean | false }) {
     let classNames = "text-sm font-bold tracking-wider bg-transparent hover:bg-black text-black font-semibold hover:text-white py-4 px-12 border-2 border-black hover:border-transparent"
 
-    if (full) {
+    if (x.full) {
         classNames = `${classNames} w-full`
     }
     return (
-        <button onClick={onClick} className={classNames}>
+        <button onClick={x.onClick} className={classNames}>
             <div>
-                {title}
+                {x.title}
             </div>
         </button>
     )
 }
 
-// @ts-ignore
-export const Tag = ({ category, year }) => {
+export const Tag = (x: { category: string; year: string }) => {
     return (
         <div className="border-l border-white px-3 pt-1 mb-10">
-            <p className="text-white text-xs tracking-wider m-0 leading-tight">{category}</p>
-            { year && <p className="text-white text-xs tracking-wider m-0 leading-tight">{year}</p>}
+            <p className="text-white text-xs tracking-wider m-0 leading-tight">{x.category}</p>
+            { x.year && <p className="text-white text-xs tracking-wider m-0 leading-tight">{x.year}</p>}
         </div>
     )
 }
 
-// @ts-ignore
-export const Center = ({ price, title, link }) => {
+export const Center = (x: { price: string; title: string, link: string }) => {
     const router = useRouter()
     function navigate() {
-        router.push(link)
+        router.push(x.link)
     }
     return (
         <div>
-            <p className="text-4xl xl:text-5xl font-bold tracking-widest leading-none">{title}</p>
-            <p className="py-6 tracking-wide">FROM <span>${price}</span></p>
+            <p className="text-4xl xl:text-5xl font-bold tracking-widest leading-none">{x.title}</p>
+            <p className="py-6 tracking-wide">FROM <span>${x.price}</span></p>
             <Button
                 onClick={navigate}
                 title="Shop Now"
+                full={false}
             />
         </div>
     )
 }
-// @ts-ignore
-export const Footer = ({ designer }) => {
+
+export const Footer = (x: { designer: string }) => {
     return (
         <div className="flex flex-1 flex-col justify-end pb-10 mt-4">
             <p className="font-light text-xs tracking-tight m-0 leading-tight mb-2">Design by</p>
-            <p className="text-xxs font-semibold tracking-tight m-0 leading-tight">{designer}</p>
+            <p className="text-xxs font-semibold tracking-tight m-0 leading-tight">{x.designer}</p>
         </div>
     )
 }
 
-// @ts-ignore
-export const DisplayMedium = ({ imageSrc, title, subtitle, link }) => {
+export const DisplayMedium = (x: {
+    imageSrc: any;
+    title: string;
+    subtitle: string;
+    link: string }) => {
     return (
         <div className="mLeft mb-4 lg:mb-0 bg-gray-300 p-8 pb-0 hover:bg-light-200">
-            <Link href={`${link}`}>
-                <a aria-label={title}>
+            <Link href={`${x.link}`}>
+                <a aria-label={x.title}>
                     <div className="flex flex-column justify-center items-center h-56">
-                        <Image src={imageSrc} alt={title} className="mimg w-3/5" height={"220px"} width={"320px"}/>
+                        <Image src={x.imageSrc} alt={x.title} className="mimg w-3/5" height={"220px"} width={"320px"}/>
                     </div>
                     <div className="mb-8">
-                        <p className="text-3xl font-semibold mb-1">{title}</p>
-                        <p className="text-xs text-gray-700">{subtitle}</p>
+                        <p className="text-3xl font-semibold mb-1">{x.title}</p>
+                        <p className="text-xs text-gray-700">{x.subtitle}</p>
                     </div>
                 </a>
             </Link>
@@ -81,26 +85,28 @@ export const DisplayMedium = ({ imageSrc, title, subtitle, link }) => {
     )
 }
 
-// @ts-ignore
-export const DisplaySmall = ({ link, title, subtitle, imageSrc }) =>  (
+export const DisplaySmall = (x: {
+    link: string;
+    title: string;
+    subtitle: string;
+    imageSrc: any }) =>  (
     <div className="lg:w-flex-fourth bg-gray-300 px-2 pt-12 pb-0 lg:p-6 lg:pb-0
   hover:bg-light-200 lg:mb-0 mb-2">
-        <Link href={link}>
-            <a aria-label={title}>
+        <Link href={x.link}>
+            <a aria-label={x.title}>
                 <div className="flex flex-column justify-center items-center h-45">
-                    <Image alt={title} src={imageSrc} className="simg w-3/5"  height={"220px"} width={"320px"}/>
+                    <Image alt={x.title} src={x.imageSrc} className="simg w-3/5"  height={"220px"} width={"320px"}/>
                 </div>
                 <div className="">
-                    <p className="text-xl font-semibold mb-1">{title}</p>
-                    <p className="text-xs text-gray-700 mb-4">{getTrimmedString(subtitle, 150)}</p>
+                    <p className="text-xl font-semibold mb-1">{x.title}</p>
+                    <p className="text-xs text-gray-700 mb-4">{getTrimmedString(x.subtitle, 150)}</p>
                 </div>
             </a>
         </Link>
     </div>
 )
 
-// @ts-ignore
-export function getTrimmedString(string, length = 8) {
+export function getTrimmedString(string: string, length = 8) {
     if (string.length <= length) {
         return string
     } else {
@@ -108,8 +114,7 @@ export function getTrimmedString(string, length = 8) {
     }
 }
 
-// @ts-ignore
-export function titleIfy(slug) {
+export function titleIfy(slug: string) {
     const words = slug.split('-');
     for (let i = 0; i < words.length; i++) {
         const word = words[i];
