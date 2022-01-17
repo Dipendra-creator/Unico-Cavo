@@ -63,21 +63,21 @@ export const Footer = (x: { designer: string }) => {
     )
 }
 
-export const DisplayMedium = (x: {
-    imageSrc: any;
+export const DisplayMedium = (props: {
+    imageSrc: StaticImageData;
     title: string;
     subtitle: string;
     link: string }) => {
     return (
         <div className="mLeft mb-4 lg:mb-0 bg-gray-300 p-8 pb-0 hover:bg-light-200">
-            <Link href={`${x.link}`}>
-                <a aria-label={x.title}>
+            <Link href={`${props.link}`}>
+                <a aria-label={props.title}>
                     <div className="flex flex-column justify-center items-center h-56">
-                        <Image src={x.imageSrc} alt={x.title} className="mimg w-3/5" height={"220px"} width={"320px"}/>
+                        <Image src={props.imageSrc} alt={props.title} className="mimg w-3/5" height={"220px"} width={"320px"}/>
                     </div>
                     <div className="mb-8">
-                        <p className="text-3xl font-semibold mb-1">{x.title}</p>
-                        <p className="text-xs text-gray-700">{x.subtitle}</p>
+                        <p className="text-3xl font-semibold mb-1">{props.title}</p>
+                        <p className="text-xs text-gray-700">{props.subtitle}</p>
                     </div>
                 </a>
             </Link>
