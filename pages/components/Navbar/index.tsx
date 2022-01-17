@@ -17,7 +17,7 @@ export default function Navbar() {
                     <Link href="/">
                         <a aria-label="Home"/>
                     </Link>
-                    {/* TODO: Fix Links */}
+                    {/* TODO: Fix Links and Create Pages */}
                     <Link href="/">
                         <a className="sm:mr-8 sm:mb-0 mb-4 text-left mr-4">Home</a>
                     </Link>
