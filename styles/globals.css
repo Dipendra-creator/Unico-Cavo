@@ -60,6 +60,47 @@ a {
 .Toastify__progress-bar--default {
     background: #89bdf9 !important;
 }
+
+section.hero {
+    animation: moveDown 1s ease-in-out forwards;
+}
+
+div.mLeft {
+    animation: moveLeft 1s ease-in-out alternate;
+}
+
+.tren {
+    margin: 0 5% 2em 5%;
+}
+@keyframes introLoad {
+    from {
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+    to {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+}
+
+
+@keyframes moveDown {
+    from {
+        transform: translateY(-100px)
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes moveLeft {
+    from {
+        transform: translateX(-100px)
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
 /* TODO: Removed dead CSS*/
 /*:root {*/
 /*    --blue: #007bff;*/

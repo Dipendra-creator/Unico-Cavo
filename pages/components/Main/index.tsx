@@ -11,7 +11,7 @@ import Link from 'next/link'
 
 
 // @ts-ignore
-function Button({ title, onClick, full = false }) {
+export function Button({ title, onClick, full = false }) {
     let classNames = "text-sm font-bold tracking-wider bg-transparent hover:bg-black text-black font-semibold hover:text-white py-4 px-12 border-2 border-black hover:border-transparent"
 
     if (full) {
@@ -27,17 +27,17 @@ function Button({ title, onClick, full = false }) {
 }
 
 // @ts-ignore
-const Tag = ({ category, year }) => {
+export const Tag = ({ category, year }) => {
     return (
-        <div className="border-l border-gray-900 px-3 pt-1 mb-10">
-            <p className="text-xs tracking-wider m-0 leading-tight">{category}</p>
-            { year && <p className="text-xs tracking-wider m-0 leading-tight">{year}</p>}
+        <div className="border-l border-white px-3 pt-1 mb-10">
+            <p className="text-white text-xs tracking-wider m-0 leading-tight">{category}</p>
+            { year && <p className="text-white text-xs tracking-wider m-0 leading-tight">{year}</p>}
         </div>
     )
 }
 
 // @ts-ignore
-const Center = ({ price, title, link }) => {
+export const Center = ({ price, title, link }) => {
     const router = useRouter()
     function navigate() {
         router.push(link)
@@ -54,7 +54,7 @@ const Center = ({ price, title, link }) => {
     )
 }
 // @ts-ignore
-const Footer = ({ designer }) => {
+export const Footer = ({ designer }) => {
     return (
         <div className="flex flex-1 flex-col justify-end pb-10 mt-4">
             <p className="font-light text-xs tracking-tight m-0 leading-tight mb-2">Design by</p>
@@ -64,9 +64,9 @@ const Footer = ({ designer }) => {
 }
 
 // @ts-ignore
-const DisplayMedium = ({ imageSrc, title, subtitle, link }) => {
+export const DisplayMedium = ({ imageSrc, title, subtitle, link }) => {
     return (
-        <div className=" mb-4 lg:mb-0 bg-gray-300 p-8 pb-0 hover:bg-light-200">
+        <div className="mLeft mb-4 lg:mb-0 bg-gray-300 p-8 pb-0 hover:bg-light-200">
             <Link href={`${link}`}>
                 <a aria-label={title}>
                     <div className="flex flex-column justify-center items-center h-56">
@@ -83,9 +83,9 @@ const DisplayMedium = ({ imageSrc, title, subtitle, link }) => {
 }
 
 // @ts-ignore
-const DisplaySmall = ({ link, title, subtitle, imageSrc }) =>  (
+export const DisplaySmall = ({ link, title, subtitle, imageSrc }) =>  (
     <div className="lg:w-flex-fourth bg-gray-300 px-2 pt-12 pb-0 lg:p-6 lg:pb-0
-  hover:bg-light-200 lg:mb-0 mb-4">
+  hover:bg-light-200 lg:mb-0 mb-2">
         <Link href={link}>
             <a aria-label={title}>
                 <div className="flex flex-column justify-center items-center h-45">
@@ -101,7 +101,7 @@ const DisplaySmall = ({ link, title, subtitle, imageSrc }) =>  (
 )
 
 // @ts-ignore
-function getTrimmedString(string, length = 8) {
+export function getTrimmedString(string, length = 8) {
     if (string.length <= length) {
         return string
     } else {
@@ -110,7 +110,7 @@ function getTrimmedString(string, length = 8) {
 }
 
 // @ts-ignore
-function titleIfy(slug) {
+export function titleIfy(slug) {
     const words = slug.split('-');
     for (let i = 0; i < words.length; i++) {
         const word = words[i];
@@ -122,7 +122,7 @@ function titleIfy(slug) {
 export default function Main() {
     return (
         <>
-            <section className="text-gray-600 body-font">
+            <section className="hero text-gray-600 body-font">
                 <div className="container px-0 py-0 mx-auto">
                     <div className="flex flex-col text-center w-full mb-12">
                         <h1 className="heading backdrop-blur-xl:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">
@@ -149,7 +149,7 @@ export default function Main() {
                 </div>
 
             </section>
-
+            <br/>
             <div className=" container mx-auto lg:my-8 lg:grid-cols-2 grid-cols-1 grid gap-4 my-4">
                 <DisplayMedium
                     imageSrc={wire2}
@@ -168,7 +168,7 @@ export default function Main() {
                 <h2 className="text-4xl mb-3">Trending Now</h2>
                 <p className="text-gray-600 text-sm">Find the perfect piece or accessory to finish off your favorite room in the house.</p>
             </div>
-            <div className="ml-20 mr-20 my-8 flex flex-col lg:flex-row justify-between sm: ml-2 mr-2">
+            <div className="tren my-8 flex flex-col lg:flex-row justify-between sm: ml-2 mr-2">
                 <DisplaySmall
                     imageSrc={wire1}
                     title={"inventory[0].name"}
@@ -197,6 +197,40 @@ export default function Main() {
                     link={`#`}
                 />
 
+            </div>
+
+            <div className="max-w-6xl mx-auto px-8 py-16">
+                <div className="relative">
+                    <div className="relative lg:flex rounded-lg shadow-2xl overflow-hidden">
+                        <div className="bg-indigo-700 h-56 lg:h-auto lg:w-5/12 relative flex items-center justify-center">
+                            {/*<img className="absolute h-full w-full object-cover"*/}
+                            {/*     src="https://stripe.com/img/v3/payments/overview/photos/slack.jpg" alt=""/>*/}
+
+                            <img className="absolute h-1/3 w-1/3 object-cover" src={"/logo.png"}/>
+                        </div>
+                        <div className="relative lg:w-7/12 bg-white">
+                            <svg className="absolute h-full text-white w-24 -ml-12" fill="currentColor"
+                                 viewBox="0 0 100 100" preserveAspectRatio="none">
+                                <polygon points="50,0 100,0 50,100 0,100"/>
+                            </svg>
+                            <div className="relative py-12 lg:py-24 px-8 lg:px-16 text-gray-700 leading-relaxed">
+                                <p>
+                                    Electrical cable taglines are one of the best technologies in the modern world.
+                                    Domestic use of the electric current is always being a risky task in our life.
+                                    We are a leading power and control cable manufacturer and supplier offering an
+                                    extensive range of power and control cables. Our high quality products in power
+                                    and control cable category are known for their superior performance and unmatched
+                                    quality. As a result of our continuous focus on quality, we are known as one of the
+                                    best power and control cables brands in India.
+                                </p>
+                                <p className="mt-6">
+                                    <a href="#" className="font-medium text-indigo-600 hover:text-indigo-900">Learn
+                                        more about our users &rarr;</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
         </>
