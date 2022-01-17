@@ -44,7 +44,7 @@ export default function Navbar() {
                 <div className="flex flex-1 justify-end relative items-center">
                     <a href={"tel:+918533001308"}>
                         <button className="flex ml-auto text-white bg-indigo-500 border-0 py-2 px-3 focus:outline-none hover:bg-indigo-600 rounded">
-                            <p className={"text-white"}>+91256482566</p>
+                            <p className={"text-white"}>CALL US</p>
                             <div className="w-2"/>
                             <FontAwesomeIcon icon={faPhone} height={"20px"}/>
                         </button>
