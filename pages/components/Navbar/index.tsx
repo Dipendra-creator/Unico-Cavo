@@ -18,22 +18,24 @@ export default function Navbar() {
                         <a aria-label="Home"/>
                     </Link>
                     {/* TODO: Fix Links */}
-                    <p className=" sm:mr-8 sm:mb-0 mb-4 text-left text-smaller mr-4 ">Home</p>
-                    <a aria-label="new arrivals" href="#">
-                        <p className=" sm:mr-8 sm:mb-0 mb-4 text-left text-smaller mr-4 ">New arrivals</p>
-                    </a>
-                    <a aria-label="sofas" href="#">
-                        <p className=" sm:mr-8 sm:mb-0 mb-4 text-left text-smaller mr-4 ">Cables</p>
-                    </a>
-                    <a aria-label="living room" href="#">
-                        <p className=" sm:mr-8 sm:mb-0 mb-4 text-left text-smaller mr-4 ">Products</p>
-                    </a>
-                    <a aria-label="on sale" href="#">
-                        <p className=" sm:mr-8 sm:mb-0 mb-4 text-left text-smaller mr-4 ">Contact Us</p>
-                    </a>
-                    <a aria-label="chairs" href="#">
-                        <p className=" sm:mr-8 sm:mb-0 mb-4 text-left text-smaller mr-4 ">About Us</p>
-                    </a>
+                    <Link href="/">
+                        <a className="sm:mr-8 sm:mb-0 mb-4 text-left mr-4">Home</a>
+                    </Link>
+                    <Link href="/New">
+                        <a className="sm:mr-8 sm:mb-0 mb-4 text-left mr-4">New arrivals</a>
+                    </Link>
+                    <Link href="/Cables">
+                        <a className="sm:mr-8 sm:mb-0 mb-4 text-left mr-4">Cables</a>
+                    </Link>
+                    <Link href="/Products">
+                        <a className="sm:mr-8 sm:mb-0 mb-4 text-left mr-4">Products</a>
+                    </Link>
+                    <Link href="/Contact">
+                        <a className="sm:mr-8 sm:mb-0 mb-4 text-left mr-4">Contact Us</a>
+                    </Link>
+                    <Link href="/About">
+                        <a className="sm:mr-8 sm:mb-0 mb-4 text-left mr-4">About Us</a>
+                    </Link>
 
 
                 </div>
