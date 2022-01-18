@@ -5,10 +5,11 @@ export function Card(x: {
     productPrice: string | undefined;
     imgSrc: string | undefined }) {
     return (
-        <div className="w-full md:w-1/3 xl:w-1/4 p-6 flex flex-col">
+        <div className="shadow w-full md:w-1/3 xl:w-1/4 p-6 flex flex-col" style={{height: "380px"}}>
             <a href="#">
-                <img className="hover:grow hover:shadow-lg"
-                     src={x.imgSrc}/>
+                <div className="hover:grow hover:shadow-lg" style={{justifyContent: "center", height: "252px"}}>
+                    <img className={"w-full h-full rounded-l-sm"} src={x.imgSrc}/>
+                </div>
                 <div className="pt-3 flex items-center justify-between">
                     <p className="">{x.productName}</p>
                 </div>
@@ -31,10 +32,10 @@ export function Card2(x: {
                     <div className="p-4 pb-0 flex-1">
                         <h3 className="font-light mb-1 text-grey-darkest">{x.productName}</h3>
 
-                        <span className="text-5xl text-grey-darkest">₹23.00</span>
+                        <span className="text-5xl text-grey-darkest">{x.productPrice}</span>
                         <div className="flex items-center mt-4">
                             <div className="pr-2 text-xs">
-                                per 90 meters
+                                /90 meters
                             </div>
                         </div>
                     </div>
@@ -69,44 +70,44 @@ export default function About () {
                     </nav>
 
                     <Card2
-                        productName={"Product Name"}
-                        productPrice={"£9.99"}
+                        productName={"LAN"}
+                        productPrice={"₹3198"}
                         imgSrc={"https://5.imimg.com/data5/SV/KX/WZ/SELLER-2099169/rubber-cables-500x500.jpg"}
                     />
                     <Card2
-                        productName={"Product Name"}
-                        productPrice={"£9.99"}
+                        productName={"Superex FR PVC"}
+                        productPrice={"₹1699"}
                         imgSrc={"https://3.imimg.com/data3/JT/YO/MY-989308/silicone-rubber-cables-250x250.jpg"}
                     />
                     <Card2
-                        productName={"Product Name"}
-                        productPrice={"£9.99"}
+                        productName={"Superex FR PVC Silver"}
+                        productPrice={"₹2499"}
                         imgSrc={"https://5.imimg.com/data5/JC/ZF/MT/SELLER-11798530/silicone-rubber-cables-500x500.jpg"}
                     />
                     <Card2
-                        productName={"Product Name"}
-                        productPrice={"£9.99"}
+                        productName={"Flex Multicolor Cable"}
+                        productPrice={"₹5149"}
                         imgSrc={"https://5.imimg.com/data5/LR/IC/MY-675191/silicone-rubber-cables-500x500.png"}
                     />
 
                     <Card2
-                        productName={"Product Name"}
-                        productPrice={"£9.99"}
+                        productName={"COM Cable"}
+                        productPrice={"₹2279"}
                         imgSrc={"https://5.imimg.com/data5/OQ/NX/DZ/SELLER-1729523/silicone-rubber-cable-500x500.jpg"}
                     />
                     <Card2
-                        productName={"Product Name"}
-                        productPrice={"£9.99"}
+                        productName={"Co-X Cable"}
+                        productPrice={"₹2538"}
                         imgSrc={"https://5.imimg.com/data5/YL/MC/JQ/SELLER-25172538/heat-resistance-silicone-rubber-cable-500x500.png"}
                     />
                     <Card2
-                        productName={"Product Name"}
-                        productPrice={"£9.99"}
+                        productName={"FR/FR-LSH/LSOH Single Silver Core"}
+                        productPrice={"₹2656"}
                         imgSrc={"https://4.imimg.com/data4/HI/XO/MY-1749292/rubber-insulated-wires-500x500.jpg"}
                     />
                     <Card2
-                        productName={"Product Name"}
-                        productPrice={"£9.99"}
+                        productName={"Submersible Flat Cable"}
+                        productPrice={"₹13198"}
                         imgSrc={"https://5.imimg.com/data5/SY/DY/ME/SELLER-1100898/submersible-pump-cable-500x500.jpg"}
                     />
                 </div>

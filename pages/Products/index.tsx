@@ -21,87 +21,119 @@ export default function About () {
                     </nav>
 
                     <Card
-                        productName={"Product Name"}
-                        productPrice={"£9.99"}
-                        imgSrc={"https://images.unsplash.com/photo-1555982105-d25af4182e4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&h=400&q=80"}
+                        productName={"LAN"}
+                        productPrice={"₹3198"}
+                        imgSrc={"https://5.imimg.com/data5/SV/KX/WZ/SELLER-2099169/rubber-cables-500x500.jpg"}
                     />
                     <Card
-                        productName={"Product Name"}
-                        productPrice={"£9.99"}
-                        imgSrc={"https://images.unsplash.com/photo-1508423134147-addf71308178?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&h=400&q=80"}
+                        productName={"Superex FR PVC"}
+                        productPrice={"₹1699"}
+                        imgSrc={"https://3.imimg.com/data3/JT/YO/MY-989308/silicone-rubber-cables-250x250.jpg"}
                     />
                     <Card
-                        productName={"Product Name"}
-                        productPrice={"£9.99"}
-                        imgSrc={"https://images.unsplash.com/photo-1449247709967-d4461a6a6103?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&h=400&q=80"}
+                        productName={"Superex FR PVC Silver"}
+                        productPrice={"₹2499"}
+                        imgSrc={"https://5.imimg.com/data5/JC/ZF/MT/SELLER-11798530/silicone-rubber-cables-500x500.jpg"}
                     />
                     <Card
-                        productName={"Product Name"}
-                        productPrice={"£9.99"}
-                        imgSrc={"https://images.unsplash.com/reserve/LJIZlzHgQ7WPSh5KVTCB_Typewriter.jpg?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&h=400&q=80"}
-                    />
-
-                    <Card
-                        productName={"Product Name"}
-                        productPrice={"£9.99"}
-                        imgSrc={"https://images.unsplash.com/photo-1467949576168-6ce8e2df4e13?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&h=400&q=80"}
-                    />
-                    <Card
-                        productName={"Product Name"}
-                        productPrice={"£9.99"}
-                        imgSrc={"https://images.unsplash.com/photo-1544787219-7f47ccb76574?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&h=400&q=80"}
-                    />
-                    <Card
-                        productName={"Product Name"}
-                        productPrice={"£9.99"}
-                        imgSrc={"https://images.unsplash.com/photo-1550837368-6594235de85c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&h=400&q=80"}
-                    />
-                    <Card
-                        productName={"Product Name"}
-                        productPrice={"£9.99"}
-                        imgSrc={"https://images.unsplash.com/photo-1551431009-a802eeec77b1?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&h=400&q=80"}
+                        productName={"Flex Multicolor Cable"}
+                        productPrice={"₹5149"}
+                        imgSrc={"https://5.imimg.com/data5/LR/IC/MY-675191/silicone-rubber-cables-500x500.png"}
                     />
 
                     <Card
-                        productName={"Product Name"}
-                        productPrice={"£9.99"}
-                        imgSrc={"https://images.unsplash.com/photo-1555982105-d25af4182e4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&h=400&q=80"}
+                        productName={"COM Cable"}
+                        productPrice={"₹2279"}
+                        imgSrc={"https://5.imimg.com/data5/OQ/NX/DZ/SELLER-1729523/silicone-rubber-cable-500x500.jpg"}
                     />
                     <Card
-                        productName={"Product Name"}
-                        productPrice={"£9.99"}
-                        imgSrc={"https://images.unsplash.com/photo-1508423134147-addf71308178?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&h=400&q=80"}
+                        productName={"Co-X Cable"}
+                        productPrice={"₹2538"}
+                        imgSrc={"https://5.imimg.com/data5/YL/MC/JQ/SELLER-25172538/heat-resistance-silicone-rubber-cable-500x500.png"}
                     />
                     <Card
-                        productName={"Product Name"}
-                        productPrice={"£9.99"}
-                        imgSrc={"https://images.unsplash.com/photo-1449247709967-d4461a6a6103?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&h=400&q=80"}
+                        productName={"FR/FR-LSH/LSOH Single Silver Core"}
+                        productPrice={"₹2656"}
+                        imgSrc={"https://4.imimg.com/data4/HI/XO/MY-1749292/rubber-insulated-wires-500x500.jpg"}
                     />
                     <Card
-                        productName={"Product Name"}
-                        productPrice={"£9.99"}
-                        imgSrc={"https://images.unsplash.com/reserve/LJIZlzHgQ7WPSh5KVTCB_Typewriter.jpg?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&h=400&q=80"}
+                        productName={"Submersible Flat Cable"}
+                        productPrice={"₹13198"}
+                        imgSrc={"https://5.imimg.com/data5/SY/DY/ME/SELLER-1100898/submersible-pump-cable-500x500.jpg"}
                     />
 
                     <Card
-                        productName={"Product Name"}
-                        productPrice={"£9.99"}
-                        imgSrc={"https://images.unsplash.com/photo-1467949576168-6ce8e2df4e13?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&h=400&q=80"}
+                        productName={"Concealed Box"}
+                        productPrice={"₹15 - ₹29 / Piece"}
+                        imgSrc={"https://5.imimg.com/data5/VH/NK/NS/SELLER-82866892/concealed-metal-boxes-500x500.png"}
                     />
                     <Card
-                        productName={"Product Name"}
-                        productPrice={"£9.99"}
-                        imgSrc={"https://images.unsplash.com/photo-1544787219-7f47ccb76574?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&h=400&q=80"}
+                        productName={"Concealed Box"}
+                        productPrice={"₹15 - ₹29 / Piece"}
+                        imgSrc={"https://5.imimg.com/data5/IS/ZF/ZI/SELLER-1955442/allwin-electric-concealed-box-500x500.jpeg"}
                     />
                     <Card
-                        productName={"Product Name"}
-                        productPrice={"£9.99"}
-                        imgSrc={"https://images.unsplash.com/photo-1550837368-6594235de85c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&h=400&q=80"}
+                        productName={"Concealed Box"}
+                        productPrice={"₹15 - ₹29 / Piece"}
+                        imgSrc={"https://4.imimg.com/data4/XM/GW/MY-36057996/4m-concealed-box-500x500.png"}
                     />
                     <Card
-                        productName={"Product Name"}
-                        productPrice={"£9.99"}
-                        imgSrc={"https://images.unsplash.com/photo-1551431009-a802eeec77b1?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&h=400&q=80"}
+                        productName={"Concealed Box"}
+                        productPrice={"₹15 - ₹29 / Piece"}
+                        imgSrc={"https://img2.exportersindia.com/product_images/bc-full/2018/9/2829295/concealed-box-ring-range-1537593989-4326785.png"}
+                    />
+
+                    <Card
+                        productName={"Concealed Box"}
+                        productPrice={"₹15 - ₹29 / Piece"}
+                        imgSrc={"https://5.imimg.com/data5/HC/NV/LI/IOS-4403824/product-jpeg-500x500.png"}
+                    />
+                    <Card
+                        productName={"Concealed Box"}
+                        productPrice={"₹15 - ₹29 / Piece"}
+                        imgSrc={"https://4.imimg.com/data4/UV/QG/MY-13849621/concealed-metal-box-500x500.png"}
+                    />
+                    <Card
+                        productName={"Concealed Box"}
+                        productPrice={"₹15 - ₹29 / Piece"}
+                        imgSrc={"https://5.imimg.com/data5/SELLER/Default/2021/3/SR/SB/TK/81358467/concealed-metal-box-500x500.jpg"}
+                    />
+                    <Card
+                        productName={"Concealed Box"}
+                        productPrice={"₹15 - ₹29 / Piece"}
+                        imgSrc={"http://www.philconindia.com/image/cache/catalog/inner-banner-952x232.png"}
+                    />
+
+                    <Card
+                        productName={"Concealed Box"}
+                        productPrice={"₹15 - ₹29 / Piece"}
+                        imgSrc={"https://5.imimg.com/data5/SELLER/Default/2020/8/SI/WN/CU/3244091/fan-box-and-concealed-box-500x500.png"}
+                    />
+                    <Card
+                        productName={"Concealed Box"}
+                        productPrice={"₹15 - ₹29 / Piece"}
+                        imgSrc={"https://5.imimg.com/data5/SELLER/Default/2020/11/KO/VJ/OZ/38339385/gi-concealed-modular-box-500x500-500x500.jpg"}
+                    />
+                    <Card
+                        productName={"Concealed Box"}
+                        productPrice={"₹15 - ₹29 / Piece"}
+                        imgSrc={"https://5.imimg.com/data5/OJ/KF/MY-43872248/silver-concealed-box-500x500.jpg"}
+                    />
+                    <Card
+                        productName={"Concealed Box"}
+                        productPrice={"₹15 - ₹29 / Piece"}
+                        imgSrc={"https://5.imimg.com/data5/SELLER/Default/2020/8/KZ/MG/GB/3244091/concealed-metal-box-500x500.jpg"}
+                    />
+
+                    <Card
+                        productName={"Concealed Box"}
+                        productPrice={"₹15 - ₹29 / Piece"}
+                        imgSrc={"https://3.imimg.com/data3/QS/YV/MY-4052683/concealed-switch-box-500x500.png"}
+                    />
+                    <Card
+                        productName={"Concealed Box"}
+                        productPrice={"₹15 - ₹29 / Piece"}
+                        imgSrc={"https://4.imimg.com/data4/NE/FR/FJ/NSDMERP-16274509/concealedboxround-500x500.png"}
                     />
                 </div>
             </section>
