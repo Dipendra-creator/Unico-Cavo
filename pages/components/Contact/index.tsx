@@ -1,5 +1,5 @@
 
-export default function ContactUS() {
+export default function Contact() {
     return (
         <div className="text-gray-100 px-8 py-5">
         <div className="text-center">
