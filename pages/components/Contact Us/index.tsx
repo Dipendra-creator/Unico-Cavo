@@ -1,7 +1,7 @@
 
 export default function ContactUS() {
     return (
-        <div className="text-gray-100 px-8 py-5">
+        <div id={"Contact"} className=" text-gray-100 px-8 py-5">
         <div className="text-center">
             <svg className="text-gray-100 h-8 mx-auto" viewBox="0 0 150 29" version="1.1"
                  xmlns="http://www.w3.org/2000/svg">
@@ -552,6 +552,5 @@ export default function ContactUS() {
             </div>
         </div>
         </div>
-
     )
 }
