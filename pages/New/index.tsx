@@ -1,4 +1,3 @@
-// "https://images.unsplash.com/photo-1555982105-d25af4182e4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&h=400&q=80"
 import NavBar from "../components/Navbar";
 
 export function Card(x: {
@@ -19,16 +18,6 @@ export function Card(x: {
     )
 }
 
-// <div className="w-full md:w-1/3 xl:w-1/4 p-6 flex flex-col">
-//     <a href="#">
-//         <img className="hover:grow hover:shadow-lg"
-//              src={x.imgSrc}/>
-//         <div className="pt-3 flex items-center justify-between">
-//             <p className="">{x.productName}</p>
-//         </div>
-//         <p className="pt-1 text-gray-900">{x.productPrice}</p>
-//     </a>
-// </div>
 
 export function Card2(x: {
     productName: string | undefined;
@@ -42,10 +31,10 @@ export function Card2(x: {
                     <div className="p-4 pb-0 flex-1">
                         <h3 className="font-light mb-1 text-grey-darkest">{x.productName}</h3>
 
-                        <span className="text-5xl text-grey-darkest">₹23.00<span className="text-lg">/PB</span></span>
+                        <span className="text-5xl text-grey-darkest">₹23.00</span>
                         <div className="flex items-center mt-4">
                             <div className="pr-2 text-xs">
-                                4 Star Rating
+                                per 90 meters
                             </div>
                         </div>
                     </div>
@@ -59,8 +48,6 @@ export function Card2(x: {
 
     )
 }
-
-
 
 export default function About () {
     return (
@@ -84,85 +71,43 @@ export default function About () {
                     <Card2
                         productName={"Product Name"}
                         productPrice={"£9.99"}
-                        imgSrc={"https://images.unsplash.com/photo-1555982105-d25af4182e4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&h=400&q=80"}
+                        imgSrc={"https://5.imimg.com/data5/SV/KX/WZ/SELLER-2099169/rubber-cables-500x500.jpg"}
                     />
                     <Card2
                         productName={"Product Name"}
                         productPrice={"£9.99"}
-                        imgSrc={"https://images.unsplash.com/photo-1508423134147-addf71308178?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&h=400&q=80"}
+                        imgSrc={"https://3.imimg.com/data3/JT/YO/MY-989308/silicone-rubber-cables-250x250.jpg"}
                     />
                     <Card2
                         productName={"Product Name"}
                         productPrice={"£9.99"}
-                        imgSrc={"https://images.unsplash.com/photo-1449247709967-d4461a6a6103?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&h=400&q=80"}
+                        imgSrc={"https://5.imimg.com/data5/JC/ZF/MT/SELLER-11798530/silicone-rubber-cables-500x500.jpg"}
                     />
                     <Card2
                         productName={"Product Name"}
                         productPrice={"£9.99"}
-                        imgSrc={"https://images.unsplash.com/reserve/LJIZlzHgQ7WPSh5KVTCB_Typewriter.jpg?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&h=400&q=80"}
-                    />
-
-                    <Card2
-                        productName={"Product Name"}
-                        productPrice={"£9.99"}
-                        imgSrc={"https://images.unsplash.com/photo-1467949576168-6ce8e2df4e13?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&h=400&q=80"}
-                    />
-                    <Card2
-                        productName={"Product Name"}
-                        productPrice={"£9.99"}
-                        imgSrc={"https://images.unsplash.com/photo-1544787219-7f47ccb76574?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&h=400&q=80"}
-                    />
-                    <Card2
-                        productName={"Product Name"}
-                        productPrice={"£9.99"}
-                        imgSrc={"https://images.unsplash.com/photo-1550837368-6594235de85c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&h=400&q=80"}
-                    />
-                    <Card2
-                        productName={"Product Name"}
-                        productPrice={"£9.99"}
-                        imgSrc={"https://images.unsplash.com/photo-1551431009-a802eeec77b1?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&h=400&q=80"}
+                        imgSrc={"https://5.imimg.com/data5/LR/IC/MY-675191/silicone-rubber-cables-500x500.png"}
                     />
 
                     <Card2
                         productName={"Product Name"}
                         productPrice={"£9.99"}
-                        imgSrc={"https://images.unsplash.com/photo-1555982105-d25af4182e4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&h=400&q=80"}
+                        imgSrc={"https://5.imimg.com/data5/OQ/NX/DZ/SELLER-1729523/silicone-rubber-cable-500x500.jpg"}
                     />
                     <Card2
                         productName={"Product Name"}
                         productPrice={"£9.99"}
-                        imgSrc={"https://images.unsplash.com/photo-1508423134147-addf71308178?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&h=400&q=80"}
+                        imgSrc={"https://5.imimg.com/data5/YL/MC/JQ/SELLER-25172538/heat-resistance-silicone-rubber-cable-500x500.png"}
                     />
                     <Card2
                         productName={"Product Name"}
                         productPrice={"£9.99"}
-                        imgSrc={"https://images.unsplash.com/photo-1449247709967-d4461a6a6103?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&h=400&q=80"}
+                        imgSrc={"https://4.imimg.com/data4/HI/XO/MY-1749292/rubber-insulated-wires-500x500.jpg"}
                     />
                     <Card2
                         productName={"Product Name"}
                         productPrice={"£9.99"}
-                        imgSrc={"https://images.unsplash.com/reserve/LJIZlzHgQ7WPSh5KVTCB_Typewriter.jpg?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&h=400&q=80"}
-                    />
-
-                    <Card2
-                        productName={"Product Name"}
-                        productPrice={"£9.99"}
-                        imgSrc={"https://images.unsplash.com/photo-1467949576168-6ce8e2df4e13?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&h=400&q=80"}
-                    />
-                    <Card2
-                        productName={"Product Name"}
-                        productPrice={"£9.99"}
-                        imgSrc={"https://images.unsplash.com/photo-1544787219-7f47ccb76574?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&h=400&q=80"}
-                    />
-                    <Card2
-                        productName={"Product Name"}
-                        productPrice={"£9.99"}
-                        imgSrc={"https://images.unsplash.com/photo-1550837368-6594235de85c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&h=400&q=80"}
-                    />
-                    <Card2
-                        productName={"Product Name"}
-                        productPrice={"£9.99"}
-                        imgSrc={"https://images.unsplash.com/photo-1551431009-a802eeec77b1?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&h=400&q=80"}
+                        imgSrc={"https://5.imimg.com/data5/SY/DY/ME/SELLER-1100898/submersible-pump-cable-500x500.jpg"}
                     />
                 </div>
             </section>

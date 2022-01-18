@@ -7,6 +7,8 @@ import wire1 from "@/images/wire1.png"
 import wire2 from "@/images/wire2.png"
 import wire3 from "@/images/wire3.png"
 import wire4 from "@/images/wire4.png"
+import concealed1 from "@/images/consealed.png"
+import wire5 from "@/images/fr-lsh.png"
 
 
 export function Button(x: {
@@ -44,10 +46,10 @@ export const Center = (x: { price: string; title: string, link: string }) => {
     return (
         <div>
             <p className="text-4xl xl:text-5xl font-bold tracking-widest leading-none">{x.title}</p>
-            <p className="py-6 tracking-wide">FROM <span>${x.price}</span></p>
+            <p className="py-6 tracking-wide">FROM <span>₹{x.price}/90m</span></p>
             <Button
                 onClick={navigate}
-                title="Shop Now"
+                title="More Info"
                 full={false}
             />
         </div>
@@ -90,7 +92,7 @@ export const DisplaySmall = (x: {
     title: string;
     subtitle: string;
     imageSrc: any }) =>  (
-    <div className="lg:w-flex-fourth bg-gray-300 px-2 pt-12 pb-0 lg:p-6 lg:pb-0
+    <div className="lg:w-flex-fourth bg-gray-300 ml-2 mr-2 px-2 pt-12 pb-0 lg:p-6 lg:pb-0
   hover:bg-light-200 lg:mb-0 mb-2">
         <Link href={x.link}>
             <a aria-label={x.title}>
@@ -139,8 +141,8 @@ export default function Main() {
                 </div>
                 <div className="bg-red-400 p-6 pb-10 smpb-6 flex lg:flex-row flex-col container px-2  mx-auto">
                     <div className="pt-4 pl-2 sm:pt-12 sm:pl-12 flex flex-col">
-                        <Tag year="2021" category="Coaxials" />
-                        <Center price="200" title={"Premium Wires"} link={`#`} />
+                        <Tag year="PVC Insulated" category="FR-LSH" />
+                        <Center price="1200" title={"Premium Wires"} link={`#`} />
                         <Footer designer="Aashendra Rajput" />
                     </div>
                     <div className="flex flex-1 justify-center items-center relative">
@@ -162,9 +164,9 @@ export default function Main() {
                     link={`#`}
                 />
                 <DisplayMedium
-                    imageSrc={wire3}
+                    imageSrc={concealed1}
                     subtitle={`50 items`}
-                    title={titleIfy("Wires")}
+                    title={titleIfy("Concealed Box")}
                     link={`#`}
                 />
             </div>
@@ -175,29 +177,29 @@ export default function Main() {
             <div className="tren my-8 flex flex-col lg:flex-row justify-between sm: ml-2 mr-2">
                 <DisplaySmall
                     imageSrc={wire1}
-                    title={"inventory[0].name"}
-                    subtitle={"inventory[0].categories[0]"}
+                    title={"Multistrand Flex Multicore Cables"}
+                    subtitle={"Multistrand bright electrolytic annealed bare copper conductor"}
                     link={`#`}
                 />
 
                 <DisplaySmall
                     imageSrc={wire2}
-                    title={"inventory[0].name"}
-                    subtitle={"inventory[0].categories[0]"}
+                    title={"1100V Silicon Cable"}
+                    subtitle={"Silicon cables according to ISI standards and the market guidelines"}
                     link={`#`}
                 />
 
                 <DisplaySmall
                     imageSrc={wire3}
-                    title={"inventory[0].name"}
-                    subtitle={"inventory[0].categories[0]"}
+                    title={"Flex Dual Insulated Multicolor Cables"}
+                    subtitle={"PVC insulated & PVC sheathed multicolor round flexible Industrial cables."}
                     link={`#`}
                 />
 
                 <DisplaySmall
                     imageSrc={wire4}
-                    title={"inventory[0].name"}
-                    subtitle={"inventory[0].categories[0]"}
+                    title={"PVC-LSH PVC Insulated Single Core Cables"}
+                    subtitle={"Single Core unsheathed Multistrand High Conductivity Insulated Cable."}
                     link={`#`}
                 />
 
