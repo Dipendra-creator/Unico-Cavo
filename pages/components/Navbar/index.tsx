@@ -30,7 +30,7 @@ export default function Navbar() {
                     <Link href="/Products">
                         <a className="sm:mr-8 sm:mb-0 mb-4 text-left mr-4">Products</a>
                     </Link>
-                    <Link href="/Contact">
+                    <Link href="/#Contact">
                         <a className="sm:mr-8 sm:mb-0 mb-4 text-left mr-4">Contact Us</a>
                     </Link>
                     <Link href="/About">
@@ -42,7 +42,7 @@ export default function Navbar() {
 
             </div>
                 <div className="flex flex-1 justify-end relative items-center">
-                    <a href={"tel:+918533001308"}>
+                    <a href={"tel:+919639695825"}>
                         <button className="flex ml-auto text-white bg-indigo-500 border-0 py-2 px-3 focus:outline-none hover:bg-indigo-600 rounded">
                             <p className={"text-white"}>CALL US</p>
                             <div className="w-2"/>
