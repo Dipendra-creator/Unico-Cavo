@@ -27,11 +27,12 @@ export default function Contact() {
                 },
                 body: JSON.stringify(formData)
             })
-            // TODO: Add CSS for form submission success
         } catch (e) {
-            // TODO: Add CSS for form submission error
             console.log(e)
         }
+        setMessage("");
+        setName("");
+        setEmail("");
     }
 
     return (

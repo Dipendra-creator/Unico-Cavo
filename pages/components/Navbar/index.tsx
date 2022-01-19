@@ -22,9 +22,6 @@ export default function Navbar() {
                         <a className="sm:mr-8 sm:mb-0 mb-4 text-left mr-4">Home</a>
                     </Link>
                     <Link href="/New">
-                        <a className="sm:mr-8 sm:mb-0 mb-4 text-left mr-4">New arrivals</a>
-                    </Link>
-                    <Link href="/Cables">
                         <a className="sm:mr-8 sm:mb-0 mb-4 text-left mr-4">Cables</a>
                     </Link>
                     <Link href="/Products">
