@@ -7,6 +7,10 @@ export default function Contact() {
 
     async function submitForm(e: FormEvent<HTMLFormElement>) {
         e.preventDefault()
+        if(name == "" || email == "" || message == ""){
+            alert("Please Fill the form First!");
+            return;
+        }
         const formData = {
             name,
             email,
