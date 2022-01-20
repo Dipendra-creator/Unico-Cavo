@@ -1,4 +1,5 @@
-import {FormEvent, useRef, useState} from "react";
+import {FormEvent, useState} from "react";
+import CustomForm from "./CustomForm";
 
 export default function Contact() {
     const [name, setName] = useState<string>('')
@@ -7,10 +8,6 @@ export default function Contact() {
 
     async function submitForm(e: FormEvent<HTMLFormElement>) {
         e.preventDefault()
-        if(name == "" || email == "" || message == ""){
-            alert("Please Fill the form First!");
-            return;
-        }
         const formData = {
             name,
             email,
@@ -59,32 +56,33 @@ export default function Contact() {
                     </div>
                     {/*  MT-8 DIV  */}
                 </div>
-                <form onSubmit={submitForm}>
-                    <div>
-                        <span className="uppercase text-sm text-gray-600 font-bold">Full Name</span>
-                        <input
-                            className="w-full bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
-                            type="text" placeholder="" value={name} onChange={(e) => setName(e.target.value)}/>
-                    </div>
-                    <div className="mt-8">
-                        <span className="uppercase text-sm text-gray-600 font-bold">Email</span>
-                        <input name="email" type="email" placeholder="Email Address"
-                               className="w-full bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
-                               value={email} onChange={(e) => setEmail(e.target.value)}/>
-                    </div>
-                    <div className="mt-8">
-                        <span className="uppercase text-sm text-gray-600 font-bold">Message</span>
-                        <textarea name="message"
-                                  className="w-full h-32 bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
-                                  value={message} onChange={(e) => setMessage(e.target.value)}/>
-                    </div>
-                    <div className="mt-8">
-                        <button type="submit"
-                                className="uppercase text-sm font-bold tracking-wide bg-indigo-500 text-gray-100 p-3 rounded-lg w-full focus:outline-none focus:shadow-outline">
-                            Send Message
-                        </button>
-                    </div>
-                </form>
+                <CustomForm/>
+                {/*<form onSubmit={submitForm}>*/}
+                {/*    <div>*/}
+                {/*        <span className="uppercase text-sm text-gray-600 font-bold">Full Name</span>*/}
+                {/*        <input*/}
+                {/*            className="w-full bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"*/}
+                {/*            type="text" placeholder="" value={name} onChange={(e) => setName(e.target.value)}/>*/}
+                {/*    </div>*/}
+                {/*    <div className="mt-8">*/}
+                {/*        <span className="uppercase text-sm text-gray-600 font-bold">Email</span>*/}
+                {/*        <input name="email" type="email" placeholder="Email Address"*/}
+                {/*               className="w-full bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"*/}
+                {/*               value={email} onChange={(e) => setEmail(e.target.value)}/>*/}
+                {/*    </div>*/}
+                {/*    <div className="mt-8">*/}
+                {/*        <span className="uppercase text-sm text-gray-600 font-bold">Message</span>*/}
+                {/*        <textarea name="message"*/}
+                {/*                  className="w-full h-32 bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"*/}
+                {/*                  value={message} onChange={(e) => setMessage(e.target.value)}/>*/}
+                {/*    </div>*/}
+                {/*    <div className="mt-8">*/}
+                {/*        <button type="submit"*/}
+                {/*                className="uppercase text-sm font-bold tracking-wide bg-indigo-500 text-gray-100 p-3 rounded-lg w-full focus:outline-none focus:shadow-outline">*/}
+                {/*            Send Message*/}
+                {/*        </button>*/}
+                {/*    </div>*/}
+                {/*</form>*/}
             </div>
         </section>
     )
