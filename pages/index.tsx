@@ -4,7 +4,7 @@ import Footer from "./components/Footer";
 import Contact from "./components/Contact";
 
 import Head from 'next/head'
-
+// Home Page
 export default function Home() {
     return (
         <>
