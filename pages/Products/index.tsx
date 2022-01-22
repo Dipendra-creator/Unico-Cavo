@@ -1,7 +1,51 @@
 import NavBar from "../components/Navbar";
-import {Card} from "../New";
+import Footer from "../components/Footer";
 
-export default function About () {
+import product1 from '@/images/products/product1.webp'
+import product2 from '@/images/products/product2.webp'
+import product3 from '@/images/products/product3.webp'
+import product4 from '@/images/products/product4.webp'
+import product5 from '@/images/products/product5.webp'
+import product6 from '@/images/products/product6.webp'
+import product7 from '@/images/products/product7.webp'
+import product8 from '@/images/products/product8.webp'
+import product9 from '@/images/products/product9.webp'
+import product10 from '@/images/products/product10.webp'
+import product11 from '@/images/products/product11.webp'
+import product12 from '@/images/products/product12.webp'
+import product13 from '@/images/products/product13.webp'
+import product14 from '@/images/products/product14.webp'
+import product15 from '@/images/products/product15.webp'
+import product16 from '@/images/products/product16.webp'
+import product17 from '@/images/products/product17.webp'
+import product18 from '@/images/products/product18.webp'
+import product19 from '@/images/products/product19.webp'
+import product20 from '@/images/products/product20.webp'
+import product21 from '@/images/products/product21.webp'
+import product22 from '@/images/products/product22.webp'
+import Image from "next/image";
+
+function Card(props: {
+    productName: string
+    productPrice: string
+    imgSrc: StaticImageData
+}) {
+    return (
+        <div className="shadow w-full md:w-1/3 xl:w-1/4 p-6 flex flex-col" style={{height: "380px"}}>
+            <a href="#">
+                <div className="hover:grow hover:shadow-lg" style={{justifyContent: "center", height: "252px"}}>
+                    <Image src={props.imgSrc} alt=''/>
+                </div>
+                <div className="pt-3 flex items-center justify-between z-10">
+                    <p className="">{props.productName}</p>
+                </div>
+                <p className="pt-1 text-gray-900">{props.productPrice}</p>
+            </a>
+        </div>
+    )
+}
+
+export default function Product() {
     return (
         <>
             <NavBar/>
@@ -23,147 +67,147 @@ export default function About () {
                     <Card
                         productName={"LAN"}
                         productPrice={"₹3198"}
-                        imgSrc={"https://5.imimg.com/data5/SV/KX/WZ/SELLER-2099169/rubber-cables-500x500.jpg"}
+                        imgSrc={product1}
                     />
                     <Card
                         productName={"Superex FR PVC"}
                         productPrice={"₹1699"}
-                        imgSrc={"https://3.imimg.com/data3/JT/YO/MY-989308/silicone-rubber-cables-250x250.jpg"}
+                        imgSrc={product2}
                     />
                     <Card
                         productName={"Superex FR PVC Silver"}
                         productPrice={"₹2499"}
-                        imgSrc={"https://5.imimg.com/data5/JC/ZF/MT/SELLER-11798530/silicone-rubber-cables-500x500.jpg"}
+                        imgSrc={product3}
                     />
                     <Card
                         productName={"Flex Multicolor Cable"}
                         productPrice={"₹5149"}
-                        imgSrc={"https://5.imimg.com/data5/LR/IC/MY-675191/silicone-rubber-cables-500x500.png"}
+                        imgSrc={product4}
                     />
 
                     <Card
                         productName={"COM Cable"}
                         productPrice={"₹2279"}
-                        imgSrc={"https://5.imimg.com/data5/OQ/NX/DZ/SELLER-1729523/silicone-rubber-cable-500x500.jpg"}
+                        imgSrc={product5}
                     />
                     <Card
                         productName={"Co-X Cable"}
                         productPrice={"₹2538"}
-                        imgSrc={"https://5.imimg.com/data5/YL/MC/JQ/SELLER-25172538/heat-resistance-silicone-rubber-cable-500x500.png"}
+                        imgSrc={product6}
                     />
                     <Card
                         productName={"FR/FR-LSH/LSOH Single Silver Core"}
                         productPrice={"₹2656"}
-                        imgSrc={"https://4.imimg.com/data4/HI/XO/MY-1749292/rubber-insulated-wires-500x500.jpg"}
+                        imgSrc={product7}
                     />
                     <Card
                         productName={"Submersible Flat Cable"}
                         productPrice={"₹13198"}
-                        imgSrc={"https://5.imimg.com/data5/SY/DY/ME/SELLER-1100898/submersible-pump-cable-500x500.jpg"}
+                        imgSrc={product8}
                     />
 
                     <Card
                         productName={"Concealed Box"}
                         productPrice={"₹15 - ₹29 / Piece"}
-                        imgSrc={"https://5.imimg.com/data5/VH/NK/NS/SELLER-82866892/concealed-metal-boxes-500x500.png"}
+                        imgSrc={product9}
                     />
                     <Card
                         productName={"Concealed Box"}
                         productPrice={"₹15 - ₹29 / Piece"}
-                        imgSrc={"https://5.imimg.com/data5/IS/ZF/ZI/SELLER-1955442/allwin-electric-concealed-box-500x500.jpeg"}
+                        imgSrc={product10}
                     />
                     <Card
                         productName={"Concealed Box"}
                         productPrice={"₹15 - ₹29 / Piece"}
-                        imgSrc={"https://4.imimg.com/data4/XM/GW/MY-36057996/4m-concealed-box-500x500.png"}
+                        imgSrc={product11}
                     />
                     <Card
                         productName={"Concealed Box"}
                         productPrice={"₹15 - ₹29 / Piece"}
-                        imgSrc={"https://img2.exportersindia.com/product_images/bc-full/2018/9/2829295/concealed-box-ring-range-1537593989-4326785.png"}
-                    />
-
-                    <Card
-                        productName={"Concealed Box"}
-                        productPrice={"₹15 - ₹29 / Piece"}
-                        imgSrc={"https://5.imimg.com/data5/HC/NV/LI/IOS-4403824/product-jpeg-500x500.png"}
-                    />
-                    <Card
-                        productName={"Concealed Box"}
-                        productPrice={"₹15 - ₹29 / Piece"}
-                        imgSrc={"https://4.imimg.com/data4/UV/QG/MY-13849621/concealed-metal-box-500x500.png"}
-                    />
-                    <Card
-                        productName={"Concealed Box"}
-                        productPrice={"₹15 - ₹29 / Piece"}
-                        imgSrc={"https://5.imimg.com/data5/SELLER/Default/2021/3/SR/SB/TK/81358467/concealed-metal-box-500x500.jpg"}
-                    />
-                    <Card
-                        productName={"Concealed Box"}
-                        productPrice={"₹15 - ₹29 / Piece"}
-                        imgSrc={"http://www.philconindia.com/image/cache/catalog/inner-banner-952x232.png"}
+                        imgSrc={product12}
                     />
 
                     <Card
                         productName={"Concealed Box"}
                         productPrice={"₹15 - ₹29 / Piece"}
-                        imgSrc={"https://5.imimg.com/data5/SELLER/Default/2020/8/SI/WN/CU/3244091/fan-box-and-concealed-box-500x500.png"}
+                        imgSrc={product13}
                     />
                     <Card
                         productName={"Concealed Box"}
                         productPrice={"₹15 - ₹29 / Piece"}
-                        imgSrc={"https://5.imimg.com/data5/SELLER/Default/2020/11/KO/VJ/OZ/38339385/gi-concealed-modular-box-500x500-500x500.jpg"}
+                        imgSrc={product14}
+
                     />
                     <Card
                         productName={"Concealed Box"}
                         productPrice={"₹15 - ₹29 / Piece"}
-                        imgSrc={"https://5.imimg.com/data5/OJ/KF/MY-43872248/silver-concealed-box-500x500.jpg"}
+                        imgSrc={product15}
                     />
                     <Card
                         productName={"Concealed Box"}
                         productPrice={"₹15 - ₹29 / Piece"}
-                        imgSrc={"https://5.imimg.com/data5/SELLER/Default/2020/8/KZ/MG/GB/3244091/concealed-metal-box-500x500.jpg"}
+                        imgSrc={product16}
                     />
 
                     <Card
                         productName={"Concealed Box"}
                         productPrice={"₹15 - ₹29 / Piece"}
-                        imgSrc={"https://3.imimg.com/data3/QS/YV/MY-4052683/concealed-switch-box-500x500.png"}
+                        imgSrc={product17}
                     />
                     <Card
                         productName={"Concealed Box"}
                         productPrice={"₹15 - ₹29 / Piece"}
-                        imgSrc={"https://4.imimg.com/data4/NE/FR/FJ/NSDMERP-16274509/concealedboxround-500x500.png"}
+                        imgSrc={product18}
+                    />
+                    <Card
+                        productName={"Concealed Box"}
+                        productPrice={"₹15 - ₹29 / Piece"}
+                        imgSrc={product19}
+                    />
+                    <Card
+                        productName={"Concealed Box"}
+                        productPrice={"₹15 - ₹29 / Piece"}
+                        imgSrc={product20}
+                    />
+                    <Card
+                        productName={"Concealed Box"}
+                        productPrice={"₹15 - ₹29 / Piece"}
+                        imgSrc={product21}
+                    />
+                    <Card
+                        productName={"Concealed Box"}
+                        productPrice={"₹15 - ₹29 / Piece"}
+                        imgSrc={product22}
                     />
                 </div>
             </section>
-
-            <footer className="container mx-auto bg-white py-8 border-t border-gray-400">
-                <div className="container flex px-3 py-8 ">
-                    <div className="w-full mx-auto flex flex-wrap">
-                        <div className="flex w-full lg:w-1/2 ">
-                            <div className="px-3 md:px-0">
-                                <h3 className="font-bold text-gray-900">About</h3>
-                                <p className="py-4">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vel mi ut felis
-                                    tempus commodo nec id erat. Suspendisse consectetur dapibus velit ut lacinia.
-                                </p>
-                            </div>
-                        </div>
-                        <div className="flex w-full lg:w-1/2 lg:justify-end lg:text-right">
-                            <div className="px-3 md:px-0">
-                                <h3 className="font-bold text-gray-900">Social</h3>
-                                <ul className="list-reset items-center pt-3">
-                                    <li>
-                                        <a className="inline-block no-underline hover:text-black hover:underline py-1"
-                                           href="#">Add social links</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </footer>
+            <Footer/>
+            {/*<footer className="container mx-auto bg-white py-8 border-t border-gray-400">*/}
+            {/*    <div className="container flex px-3 py-8 ">*/}
+            {/*        <div className="w-full mx-auto flex flex-wrap">*/}
+            {/*            <div className="flex w-full lg:w-1/2 ">*/}
+            {/*                <div className="px-3 md:px-0">*/}
+            {/*                    <h3 className="font-bold text-gray-900">About</h3>*/}
+            {/*                    <p className="py-4">*/}
+            {/*                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vel mi ut felis*/}
+            {/*                        tempus commodo nec id erat. Suspendisse consectetur dapibus velit ut lacinia.*/}
+            {/*                    </p>*/}
+            {/*                </div>*/}
+            {/*            </div>*/}
+            {/*            <div className="flex w-full lg:w-1/2 lg:justify-end lg:text-right">*/}
+            {/*                <div className="px-3 md:px-0">*/}
+            {/*                    <h3 className="font-bold text-gray-900">Social</h3>*/}
+            {/*                    <ul className="list-reset items-center pt-3">*/}
+            {/*                        <li>*/}
+            {/*                            <a className="inline-block no-underline hover:text-black hover:underline py-1"*/}
+            {/*                               href="#">Add social links</a>*/}
+            {/*                        </li>*/}
+            {/*                    </ul>*/}
+            {/*                </div>*/}
+            {/*            </div>*/}
+            {/*        </div>*/}
+            {/*    </div>*/}
+            {/*</footer>*/}
         </>
     )
 }

@@ -1,8 +1,8 @@
 import Link from "next/link"
 import Image from 'next/image'
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import {faPhone, faPhoneAlt} from '@fortawesome/free-solid-svg-icons'
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome"
+import {faPhoneAlt} from '@fortawesome/free-solid-svg-icons'
 
 export default function Navbar() {
     return (
@@ -41,15 +41,16 @@ export default function Navbar() {
 
             </div>
 
-                <div className="flex flex-1 justify-end relative items-center">
-                    <a href={"tel:+919639695825"}>
-                        <button className="flex ml-auto align-baseline text-white bg-indigo-500 border-0 py-2 px-3 focus:outline-none hover:bg-indigo-600 rounded">
-                            {/* TODO: Align Icon with Text */}
-                            <FontAwesomeIcon icon={faPhoneAlt} height="20" className="mr-2"/>
-                            <p className="text-white uppercase">Call Us</p>
-                        </button>
-                    </a>
-                </div>
+            <div className="flex flex-1 justify-end relative items-center">
+                <a href={"tel:+919639695825"}>
+                    <button
+                        className="flex ml-auto align-baseline text-white bg-indigo-500 border-0 py-2 px-3 focus:outline-none hover:bg-indigo-600 rounded">
+                        {/* TODO: Align Icon with Text */}
+                        <FontAwesomeIcon icon={faPhoneAlt} height="20" className="mr-2"/>
+                        <p className="text-white uppercase">Call Us</p>
+                    </button>
+                </a>
+            </div>
         </nav>
     )
 }
