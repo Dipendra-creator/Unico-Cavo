@@ -5,6 +5,7 @@ specifiers:
   '@fortawesome/free-brands-svg-icons': ^5.15.4
   '@fortawesome/free-solid-svg-icons': ^5.15.4
   '@fortawesome/react-fontawesome': ^0.1.16
+  '@headlessui/react': ^1.4.3
   '@types/node': 17.0.8
   '@types/react': 17.0.38
   '@types/validator': ^13.7.1
@@ -28,6 +29,7 @@ dependencies:
   '@fortawesome/free-brands-svg-icons': 5.15.4
   '@fortawesome/free-solid-svg-icons': 5.15.4
   '@fortawesome/react-fontawesome': 0.1.16_f515edce028694561ceb456e3dba224c
+  '@headlessui/react': 1.4.3_react-dom@17.0.2+react@17.0.2
   formik: 2.2.9_react@17.0.2
   next: 12.0.8_react-dom@17.0.2+react@17.0.2
   react: 17.0.2
@@ -162,6 +164,17 @@ packages:
       '@fortawesome/fontawesome-svg-core': 1.2.36
       prop-types: 15.8.1
       react: 17.0.2
+    dev: false
+
+  /@headlessui/react/1.4.3_react-dom@17.0.2+react@17.0.2:
+    resolution: {integrity: sha512-n2IQkaaw0aAAlQS5MEXsM4uRK+w18CrM72EqnGRl/UBOQeQajad8oiKXR9Nk15jOzTFQjpxzrZMf1NxHidFBiw==}
+    engines: {node: '>=10'}
+    peerDependencies:
+      react: ^16 || ^17 || ^18
+      react-dom: ^16 || ^17 || ^18
+    dependencies:
+      react: 17.0.2
+      react-dom: 17.0.2_react@17.0.2
     dev: false
 
   /@humanwhocodes/config-array/0.9.2:

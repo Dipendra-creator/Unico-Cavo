@@ -8,6 +8,9 @@ export default function Contact() {
 
     async function submitForm(e: FormEvent<HTMLFormElement>) {
         e.preventDefault()
+        if (name == '' || email == '' || message == '') {
+            alert('Please fill all the details in the contact form')
+        }
         const formData = {
             name,
             email,
@@ -37,10 +40,10 @@ export default function Contact() {
     }
 
     return (
-        <section id={"Contact"} className="text-gray-100 px-8 py-5">
+        <section id={"Contact"} className="text-gray-100 md:px-8 md:py-5 px-2 py-0.5">
             {/*  Text Center Div  */}
             <div
-                className="max-w-screen-xl px-8 grid gap-8 grid-cols-1 md:grid-cols-2 md:px-12 lg:px-16 xl:px-32 py-16 mx-auto bg-gray-100 text-gray-900 rounded-lg shadow-lg">
+                className="max-w-screen-xl px-2 grid gap-8 grid-cols-1 md:grid-cols-2 md:px-12 lg:px-16 xl:px-32 py-16 mx-auto bg-gray-100 text-gray-900 rounded-lg shadow-lg">
                 <div className="flex flex-col justify-between">
                     <div>
                         <h2 className="text-4xl lg:text-5xl font-bold leading-tight">Contact Us!</h2>

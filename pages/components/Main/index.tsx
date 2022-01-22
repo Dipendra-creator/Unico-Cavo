@@ -133,11 +133,11 @@ export default function Main() {
             <section className="hero text-gray-600 body-font">
                 <div className="container px-0 py-0 mx-auto">
                     <div className="flex flex-col text-center w-full mb-12">
-                        <h1 className="heading backdrop-blur-xl:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">
+                        <h1 className="heading backdrop-blur-xl:text-3xl text-5xl font-medium title-font mb-4 text-gray-900">
                             Welcome to Unico Cavo
                         </h1>
-                        <p className="pera lg mx-auto leading-relaxed text-base">
-                            A LEADING WIRE AND CABLES MANUFACTURERS WITH QUALITY PRODUCTS.
+                        <p className="mx-auto leading-relaxed text-xl">
+                            A Leading Wire And Cables Manufacturers With Quality Products.
                         </p>
                     </div>
                 </div>
