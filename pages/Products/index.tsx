@@ -34,9 +34,9 @@ function Card(props: {
         <div className="shadow w-full md:w-1/3 xl:w-1/4 p-6 flex flex-col" style={{height: "380px"}}>
             <a href="#">
                 <div className="hover:grow hover:shadow-lg" style={{justifyContent: "center", height: "252px"}}>
-                    <Image src={props.imgSrc} alt=''/>
+                    <Image width={252} height={252} src={props.imgSrc} alt=''/>
                 </div>
-                <div className="pt-3 flex items-center justify-between z-10">
+                <div className="pt-3 flex items-center justify-between">
                     <p className="">{props.productName}</p>
                 </div>
                 <p className="pt-1 text-gray-900">{props.productPrice}</p>
