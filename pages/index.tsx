@@ -11,7 +11,7 @@ export default function Home() {
             <Head>
                 <title>Unico Cavo</title>
                 <meta name="description"
-                      content="Unico Cavo ECommerce Next provides a way to quickly get up and running with a fully configurable ECommerce site using Next.js."/>
+                      content="Unico Cavo is a cable company established in Aligarh to serve clients across India"/>
                 <meta property="og:title" content="Unico Cavo " key="title"/>
             </Head>
             <NavBar/>

@@ -10,31 +10,28 @@ export default function About () {
                     <div className="flex flex-col justify-center">
                         <div className="max-w-xl mb-6">
                             <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none">
-                                We connect the world with
+                                We are a high quality and endurance cable company established in <span className="text-red-500">Aligarh</span>
                                 <br className="hidden md:block" />
-                                Electricity{' '}
-                                <span className="relative px-1">
-                <div className="absolute inset-x-0 bottom-0 h-3 transform -skew-x-12 bg-teal-accent-400" />
-                <span className="relative inline-block text-deep-purple-accent-400">
-                  with quality cables
-                </span>
-              </span>
+                                in <span className="text-red-500">2011</span>.
+                                {/*<span className="relative px-1">*/}
+                {/*<div className="absolute inset-x-0 bottom-0 h-3 transform -skew-x-12 bg-teal-accent-400" />*/}
+                {/*<span className="relative inline-block text-deep-purple-accent-400">*/}
+                {/*  with quality cables*/}
+                {/*</span>*/}
+              {/*</span>*/}
                             </h2>
                             <p className="text-base text-gray-700 md:text-lg">
-                                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                                accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-                                quae. explicabo.
+                                Our cables are designed by professional engineers to make the quality meet high standards as you have come to expect from us.
                             </p>
                         </div>
                         <div className="grid gap-5 row-gap-8 sm:grid-cols-2">
                             <div className="bg-white border-l-4 shadow-sm border-deep-purple-accent-400">
                                 <div className="h-full p-5 border border-l-0 rounded-r">
                                     <h6 className="mb-2 font-semibold leading-5">
-                                        Ill be sure to note that in my log
+                                        We design high quality cables
                                     </h6>
                                     <p className="text-sm text-gray-900">
-                                        Lookout flogging bilge rat main sheet bilge water nipper fluke
-                                        to go on account heave down.
+                                    We make sure our customers get the best quality cables at reasonable prices
                                     </p>
                                 </div>
                             </div>
@@ -42,11 +39,10 @@ export default function About () {
                             <div className="bg-white border-l-4 shadow-sm border-deep-purple-accent-400">
                                 <div className="h-full p-5 border border-l-0 rounded-r">
                                     <h6 className="mb-2 font-semibold leading-5">
-                                        A business big enough that it could be listed
+                                        We also supply Concealed boxes
                                     </h6>
                                     <p className="text-sm text-gray-900">
-                                        Those options are already baked in with this model shoot me an
-                                        email clear.
+                                        Our wide variety of offerings include GI Round, powder coated round and square concealed boxes.
                                     </p>
                                 </div>
                             </div>
@@ -58,6 +54,9 @@ export default function About () {
                             src="https://images.pexels.com/photos/927022/pexels-photo-927022.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=3&amp;h=750&amp;w=1260"
                             alt=""
                         />
+                       {/*<h1>Based In: Aligarh</h1>*/}
+                       {/* <h2>Since 2011</h2>*/}
+                       {/* <h2></h2>*/}
                     </div>
                 </div>
             </div>
