@@ -1,4 +1,6 @@
-import Link from "next/link";
+import Link from "next/link"
+import Image from 'next/image'
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import {faPhone, faPhoneAlt} from '@fortawesome/free-solid-svg-icons'
 
@@ -9,7 +11,7 @@ export default function Navbar() {
                 <div className="mb-4 sm:mr-16 max-w-48 sm:max-w-none">
                     <Link href="/">
                         <a aria-label="Home">
-                            <img src="/logo.png" alt="logo" width="90" height="28"/>
+                            <Image src="/logo.png" alt="logo" width="90" height="28"/>
                         </a>
                     </Link>
                 </div>

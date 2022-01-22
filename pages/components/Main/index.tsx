@@ -1,14 +1,16 @@
 import { useRouter } from 'next/router'
 import 'react-awesome-slider/dist/styles.css';
 import 'react-awesome-slider/dist/custom-animations/cube-animation.css';
+
 import Image from "next/image";
 import Link from 'next/link'
+
 import wire1 from "@/images/wire1.png"
 import wire2 from "@/images/wire2.png"
 import wire3 from "@/images/wire3.png"
 import wire4 from "@/images/wire4.png"
 import concealed1 from "@/images/consealed.png"
-import wire5 from "@/images/fr-lsh.png"
+import logo from '@/images/logo.png'
 
 
 export function Button(x: {
@@ -212,7 +214,7 @@ export default function Main() {
                             {/*<img className="absolute h-full w-full object-cover"*/}
                             {/*     src="https://stripe.com/img/v3/payments/overview/photos/slack.jpg" alt=""/>*/}
 
-                            <img className="absolute h-1/3 w-1/3 object-cover" src={"/logo.png"}/>
+                            <Image className="absolute h-1/3 w-1/3 object-cover" src={logo} alt="Unica Cavo Logo"/>
                         </div>
                         <div className="relative lg:w-7/12 bg-white">
                             <svg className="absolute h-full text-white w-24 -ml-12" fill="currentColor"

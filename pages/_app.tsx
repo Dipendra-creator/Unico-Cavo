@@ -3,8 +3,6 @@ import type { AppProps } from 'next/app'
 import { config, library } from '@fortawesome/fontawesome-svg-core';
 import {faFacebook, faInstagram} from '@fortawesome/free-brands-svg-icons';
 import { faUser, faUsers } from '@fortawesome/free-solid-svg-icons';
-// import {} from '@fortawesome/react-fontawesome'
-import { icon } from '@fortawesome/fontawesome-svg-core'
 config.autoAddCss = false; // Tell Font Awesome to skip adding the CSS automatically since it's being imported above
 library.add(
     faInstagram,  faFacebook, faUser, faUsers

@@ -1,38 +1,40 @@
 import NavBar from "../components/Navbar";
 
-export function Card(x: {
-    productName: string | undefined;
-    productPrice: string | undefined;
-    imgSrc: string | undefined }) {
+export function Card(props: {
+    productName: string
+    productPrice: string
+    imgSrc: string
+}) {
     return (
         <div className="shadow w-full md:w-1/3 xl:w-1/4 p-6 flex flex-col" style={{height: "380px"}}>
             <a href="#">
                 <div className="hover:grow hover:shadow-lg" style={{justifyContent: "center", height: "252px"}}>
-                    <img className={"w-full h-full rounded-l-sm"} src={x.imgSrc}/>
+                    <img className={"w-full h-full rounded-l-sm"} src={props.imgSrc} alt=''/>
                 </div>
                 <div className="pt-3 flex items-center justify-between">
-                    <p className="">{x.productName}</p>
+                    <p className="">{props.productName}</p>
                 </div>
-                <p className="pt-1 text-gray-900">{x.productPrice}</p>
+                <p className="pt-1 text-gray-900">{props.productPrice}</p>
             </a>
         </div>
     )
 }
 
 
-export function Card2(x: {
+export function Card2(props: {
     productName: string | undefined;
     productPrice: string | undefined;
-    imgSrc: string | undefined }) {
+    imgSrc: string | undefined
+}) {
     return (
         <div className="flex justify-center items-center bg-blue-lightest w-full md:w-1/2 xl:w-1/3 p-6">
-        <div id="app" className="bg-white w-128 h-60 rounded shadow-md flex card text-grey-darkest">
-            <img className="w-1/2 h-full rounded-l-sm" src={x.imgSrc} alt="Room Image"/>
+            <div id="app" className="bg-white w-128 h-60 rounded shadow-md flex card text-grey-darkest">
+                <img className="w-1/2 h-full rounded-l-sm" src={props.imgSrc} alt="Room Image"/>
                 <div className="w-full flex flex-col">
                     <div className="p-4 pb-0 flex-1">
-                        <h3 className="font-light mb-1 text-grey-darkest">{x.productName}</h3>
+                        <h3 className="font-light mb-1 text-grey-darkest">{props.productName}</h3>
 
-                        <span className="text-5xl text-grey-darkest">{x.productPrice}</span>
+                        <span className="text-5xl text-grey-darkest">{props.productPrice}</span>
                         <div className="flex items-center mt-4">
                             <div className="pr-2 text-xs">
                                 /90 meters
@@ -44,13 +46,13 @@ export function Card2(x: {
                         Buy Now
                     </div>
                 </div>
-        </div>
+            </div>
         </div>
 
     )
 }
 
-export default function About () {
+export default function About() {
     return (
         <>
             <NavBar/>
