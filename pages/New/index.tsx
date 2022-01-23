@@ -21,10 +21,12 @@ function Card(props: {
                             </div>
                         </div>
                     </div>
-                    <div
-                        className="bg-gray-200 p-3 flex items-center justify-between transition hover:bg-grey-light">
-                        Buy Now
-                    </div>
+                    <a href={"tel: +919639695825"}>
+                        <div
+                            className="bg-gray-200 p-3 flex items-center justify-between transition hover:bg-grey-light">
+                                Contact Now
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>
