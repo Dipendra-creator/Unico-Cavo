@@ -12,8 +12,8 @@ export default function Navbar() {
     return (
         <nav className="mb-4">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div className="flex items-center justify-between h-16">
-                    <div className="flex items-center">
+                <div className="flex container w-full items-center justify-between h-16">
+                    <div className="flex items-center container mr-2">
                         <div className="flex-shrink-0">
                             <Link href="/">
                                 <a aria-label="Home">
@@ -21,8 +21,8 @@ export default function Navbar() {
                                 </a>
                             </Link>
                         </div>
-                        <div className="hidden md:block">
-                            <div className="ml-10 flex items-baseline space-x-4">
+                        <div className="flex hidden md:block container">
+                            <div className="ml-10 flex items-baseline space-x-4" >
                                 <Link href="/">
                                     <a className="hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md">Home</a>
                                 </Link>
@@ -40,18 +40,20 @@ export default function Navbar() {
                                     <a className="hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md">About Us</a>
                                 </Link>
                                 {/*TODO: Right align the button*/}
-                                <a href={"tel:+919639695825"}>
-                                    <button
-                                        className="flex align-baseline text-white bg-indigo-500 border-0 py-2 px-3 focus:outline-none hover:bg-indigo-600 rounded-2xl lg:rounded">
-                                        {/* TODO: Align Icon with Text */}
-                                        <FontAwesomeIcon icon={faPhoneAlt} height="20" className="lg:mr-2"/>
-                                        <p className="hidden lg:block text-white uppercase">Call Us</p>
-                                    </button>
-                                </a>
+                                <div className={"flex flex-1 justify-end relative items-center"}>
+                                    <a className={"flex flex-1 justify-end relative items-center"} href={"tel:+919639695825"}>
+                                        <button
+                                            className="flex align-baseline text-white bg-indigo-500 border-0 py-2 px-3 focus:outline-none hover:bg-indigo-600 rounded-2xl lg:rounded">
+                                            {/* TODO: Align Icon with Text */}
+                                            <FontAwesomeIcon icon={faPhoneAlt} height="20" className="lg:mr-2"/>
+                                            <p className="hidden lg:block text-white uppercase">Call Us</p>
+                                        </button>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div className="-mr-2 flex md:hidden">
+                    <div className="flex md:hidden">
                         <button
                             onClick={() => setIsOpen(!isOpen)}
                             type="button"

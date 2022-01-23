@@ -131,7 +131,7 @@ export default function About() {
                 <p className="text-center mt-6 text-lg font-light text-gray-500"> Strict adherence to quality to make
                     superior & incomparable products in the market forms the guiding principle towards every
                     manufactured product. </p></div>
-            <div className="grid grid-cols-1 md:grid-cols-3">
+            <div className="container grid grid-cols-1 md:grid-cols-1">
                 <div className="p-8">
                     <div
                         className="bg-indigo-100 rounded-full w-16 h-16 flex justify-center items-center text-indigo-500 shadow-2xl">
@@ -142,7 +142,7 @@ export default function About() {
                         </svg>
                     </div>
                     <h2 className="uppercase mt-6 text-indigo-500 font-medium mb-3"> LED Laboratory </h2>    <p
-                    className="font-light text-sm text-gray-500 mb-3"> The lamp and lighting laboratory takes a medium
+                    className="font-light text-2xl text-gray-500 mb-3"> The lamp and lighting laboratory takes a medium
                     to long range point of view to basic and applied research for new technology and new products. </p>
                     <a
                         className="text-indigo-500 flex items-center hover:text-indigo-600" href=""> More about us
@@ -164,7 +164,7 @@ export default function About() {
                     </div>
                     <h2 className="uppercase mt-6 text-green-500 font-medium mb-3"> Quality Assurance Division </h2>
                     <p
-                        className="font-light text-sm text-gray-500 mb-3"> The lamp and lighting laboratory takes a
+                        className="font-light text-2xl text-gray-500 mb-3"> The lamp and lighting laboratory takes a
                         medium to long range point of view to basic and applied research for new technology and new
                         products. </p>    <a
                     className="text-green-500 flex items-center hover:text-green-600" href=""> More about us <svg
@@ -184,7 +184,7 @@ export default function About() {
                         </svg>
                     </div>
                     <h2 className="uppercase mt-6 text-red-500 font-medium mb-3"> Design Centre </h2>    <p
-                    className="font-light text-sm text-gray-500 mb-3"> Based upon information provided by R & D
+                    className="font-light text-2xl text-gray-500 mb-3"> Based upon information provided by R & D
                     department the Design Centre develops designs to meet quality lifestyle objectives. </p>
                     <a
                         className="text-red-500 flex items-center hover:text-red-600" href=""> More about us <svg
