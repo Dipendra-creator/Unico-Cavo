@@ -5,11 +5,11 @@ import 'react-awesome-slider/dist/custom-animations/cube-animation.css';
 import Image from "next/image";
 import Link from 'next/link'
 
-import wire1 from "@/images/wire1.png"
-import wire2 from "@/images/wire2.png"
-import wire3 from "@/images/wire3.png"
-import wire4 from "@/images/wire4.png"
-import concealed1 from "@/images/consealed.png"
+import wire1 from "@/images/wire1.webp"
+import wire2 from "@/images/wire2.webp"
+import wire3 from "@/images/wire3.webp"
+import wire4 from "@/images/wire4.webp"
+import concealed1 from "@/images/consealed.webp"
 import logo from '@/images/logo.png'
 
 
@@ -145,7 +145,6 @@ export default function Main() {
                     <div className="pt-4 pl-2 sm:pt-12 sm:pl-12 flex flex-col">
                         <Tag year="PVC Insulated" category="FR-LSH" />
                         <Center price="1200" title={"Premium Wires"} link={`#`} />
-                        <Footer designer="Aashendra Rajput" />
                     </div>
                     <div className="flex flex-1 justify-center items-center relative">
                         <div className="z-10">
