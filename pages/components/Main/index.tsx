@@ -9,7 +9,7 @@ import wire1 from "@/images/wire1.webp"
 import wire2 from "@/images/wire2.webp"
 import wire3 from "@/images/wire3.webp"
 import wire4 from "@/images/wire4.webp"
-import concealed1 from "@/images/consealed.webp"
+import concealed1 from "@/images/concealed.png"
 import logo from '@/images/logo.png'
 
 
