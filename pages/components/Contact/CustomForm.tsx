@@ -1,33 +1,32 @@
-import * as React from 'react';
-import {Field, Form, Formik, ErrorMessage} from 'formik';
+import React from 'react';
+import {Field, Form, Formik, FormikHelpers} from 'formik';
+import {ToastContainer, toast} from "react-toastify";
 
+import 'react-toastify/dist/ReactToastify.min.css';
 interface MyFormValues {
     name: string;
     email: string;
     message: string
 }
+
 // TODO: Fix the form
 export default function CustomForm() {
     const initialValues: MyFormValues = {name: '', email: '', message: ''};
-    return (
-        <Formik
-            initialValues={initialValues}
-            onSubmit={async (values, actions) => {
-                const formData = {
-                    name: values.name,
-                    email: values.email,
-                    message: values.message,
-                    "_subject": `Regarding email on ${new Date().toLocaleDateString(undefined, {timeZone: 'Asia/Kolkata'})} at
+    async function submitForm(values: MyFormValues, actions: FormikHelpers<MyFormValues>) {
+            const formData = {
+                name: values.name,
+                email: values.email,
+                message: values.message,
+                "_subject": `Regarding email on ${new Date().toLocaleDateString(undefined, {timeZone: 'Asia/Kolkata'})} at
             ${new Date().toLocaleTimeString(undefined, {timeZone: 'Asia/Kolkata'})}`,
-                    // Auto Response will not work due to Ajax and Captcha Disable
-                    "_autoresponse": `Dear ${values.name}, we have received your mail will revert you as soon as possible`,
-                    "_template": "box"
-                }
-                alert(values)
-                console.log(formData)
-                try {
-                    // TODO: Change email to infounicocavo@gmail.com
-                    const res = await fetch("https://formsubmit.co/ajax/40838f5535e1424aabef5f51e9273915", {
+                // Auto Response will not work due to Ajax and Captcha Disable
+                "_autoresponse": `Dear ${values.name}, we have received your mail will revert you as soon as possible`,
+                "_template": "box"
+            }
+            try {
+                // TODO: Change email to infounicocavo@gmail.com
+                const res = await toast.promise(
+                    fetch("https://formsubmit.co/ajax/40838f5535e1424aabef5f51e9273915", {
                         method: "POST",
                         headers: {
                             'Content-Type': 'application/json',
@@ -35,30 +34,46 @@ export default function CustomForm() {
                         },
                         body: JSON.stringify(formData)
                     })
-                } catch (e) {
-                    console.log(e)
-                }
-                actions.setSubmitting(false);
-                actions.resetForm()
-            }}
+                    , {
+                        pending: "Sending Message",
+                        error: "Sorry, could not deliver your message please try again",
+                        success: "Message delivered!"
+                    }, {
+                        position: "bottom-center",
+                        autoClose: 2000,
+                        hideProgressBar: true,
+                        closeOnClick: true,
+                        pauseOnHover: true,
+                        draggable: true,
+                        progress: undefined,
+                    });
+                console.log(res)
+            } catch (e) {
+                console.log("Error:", e)
+            }
+            actions.resetForm()
+    }
+    return (
+        <Formik
+            initialValues={initialValues}
+
+            onSubmit={submitForm}
             validate={values => {
-                const errors = {
-                    name: '',
-                    email: '',
-                    message: ''
-                }
+                const errors: Partial<MyFormValues> = {}
                 if (!values.name) {
-                    errors.name = 'Name required'
-                }
-                if (!values.message) {
-                    errors.message = 'Message required'
+                    errors.name = 'Required'
                 }
                 if (!values.email) {
-                    errors.email = 'Email required'
-                } else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(values.email)) {
-                    errors.email = 'Invalid email';
+                    errors.email = 'Required';
+                } else if (
+                    !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(values.email)
+                ) {
+                    errors.email = 'Invalid email address';
                 }
-                return errors
+                if (!values.message) {
+                    errors.message = 'Required'
+                }
+                return errors;
             }}
         >
             {({
@@ -73,21 +88,21 @@ export default function CustomForm() {
               }) => (
                 <Form>
                     <label htmlFor="name" className="uppercase text-sm text-gray-600 font-bold">Full Name</label>
-                    <Field id="name" name="name" placeholder="Name"
+                    <Field id="name" name="name" placeholder="Name" required
                            className="w-full bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
                     />
                     {errors.name && touched.name && <p>{errors.name}</p>}
 
                     <label htmlFor="email"
                            className="uppercase mt-4 inline-block text-sm text-gray-600 font-bold">Email</label>
-                    <Field id="email" name="email" placeholder="Your contact" type="email"
+                    <Field id="email" name="email" placeholder="Your contact" type="email" required
                            className="w-full bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
                     />
                     {errors.email && touched.email && <p>{errors.email}</p>}
 
                     <label htmlFor="message"
                            className="uppercase mt-4 inline-block text-sm text-gray-600 font-bold">Message</label>
-                    <Field id="message" name="message" placeholder="How can we help you?" as="textarea"
+                    <Field id="message" name="message" placeholder="How can we help you?" as="textarea" required
                            className="w-full h-32 bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
                     />
                     {errors.message && touched.message && <p>{errors.message}</p>}
@@ -96,11 +111,86 @@ export default function CustomForm() {
                             className="mt-6 uppercase text-sm font-bold tracking-wide bg-indigo-500 text-gray-100 p-3 rounded-lg w-full focus:outline-none focus:shadow-outline">
                         Send Message
                     </button>
-                    <button type="submit" disabled={isSubmitting}>
-                        Submit
-                    </button>
+                    <ToastContainer/>
+
                 </Form>
             )}
         </Formik>
     );
 }
+//
+// import React from 'react';
+// import {Formik,} from 'formik';
+//
+// interface MyFormValues {
+//     name: string;
+//     email: string;
+//     message: string
+// }
+//
+// function Basic() {
+//     const initialValues: MyFormValues = {name: '', email: '', message: ''};
+//
+//     return (
+//         <div>
+//             <h1>Anywhere in your app!</h1>
+//             <Formik
+//                 initialValues={initialValues}
+//                 validate={values => {
+//                     const errors = {};
+//                     if (!values.email) {
+//                         // @ts-ignore
+//                         errors.email = 'Required';
+//                     } else if (
+//                         !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(values.email)
+//                     ) {
+//                         // @ts-ignore
+//                         errors.email = 'Invalid email address';
+//                     }
+//                     return errors;
+//                 }}
+//                 onSubmit={(values, {setSubmitting}) => {
+//                     setTimeout(() => {
+//                         alert(JSON.stringify(values, null, 2));
+//                         setSubmitting(false);
+//                     }, 400);
+//                 }}
+//             >
+//                 {({
+//                       values,
+//                       errors,
+//                       touched,
+//                       handleChange,
+//                       handleBlur,
+//                       handleSubmit,
+//                       isSubmitting,
+//                       /* and other goodies */
+//                   }) => (
+//                     <form onSubmit={handleSubmit}>
+//                         <input
+//                             type="email"
+//                             name="email"
+//                             onChange={handleChange}
+//                             onBlur={handleBlur}
+//                             value={values.email}
+//                         />
+//                         {errors.email && touched.email && errors.email}
+//                         <input
+//                             type="password"
+//                             name="password"
+//                             onChange={handleChange}
+//                             onBlur={handleBlur}
+//                             value={values.password}
+//                         />
+//                         {errors.password && touched.password && errors.password}
+//                         <button type="submit" disabled={isSubmitting}>
+//                             Submit
+//                         </button>
+//                     </form>
+//                 )}
+//             </Formik>
+//         </div>
+//     );
+// }
+//
+// export default Basic;
