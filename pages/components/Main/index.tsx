@@ -2,7 +2,7 @@ import { useRouter } from 'next/router'
 import 'react-awesome-slider/dist/styles.css';
 import 'react-awesome-slider/dist/custom-animations/cube-animation.css';
 
-import Image from "next/image"
+import Image from "next/image";
 import Link from 'next/link'
 
 import wire1 from "@/images/wire1.webp"
@@ -220,7 +220,7 @@ export default function Main() {
                                  viewBox="0 0 100 100" preserveAspectRatio="none">
                                 <polygon points="50,0 100,0 50,100 0,100"/>
                             </svg>
-                            <div className="relative text-center py-12 lg:py-24 px-8 lg:px-16 text-gray-700 leading-relaxed">
+                            <div className="relative py-12 lg:py-24 px-8 lg:px-16 text-gray-700 leading-relaxed">
                                 <p>
                                     Electrical cable taglines are one of the best technologies in the modern world.
                                     Domestic use of the electric current is always being a risky task in our life.
