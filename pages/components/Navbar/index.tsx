@@ -22,7 +22,7 @@ export default function Navbar() {
                             </Link>
                         </div>
                         <div className="flex hidden md:block container">
-                            <div className="ml-10 flex items-baseline space-x-4" >
+                            <div className="ml-10 flex items-baseline space-x-4">
                                 <Link href="/">
                                     <a className="hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md">Home</a>
                                 </Link>
@@ -41,7 +41,8 @@ export default function Navbar() {
                                 </Link>
                                 {/*TODO: Right align the button*/}
                                 <div className={"flex flex-1 justify-end relative items-center"}>
-                                    <a className={"flex flex-1 justify-end relative items-center"} href={"tel:+919639695825"}>
+                                    <a className={"flex flex-1 justify-end relative items-center"}
+                                       href={"tel:+919639695825"}>
                                         <button
                                             className="flex align-baseline text-white bg-indigo-500 border-0 py-2 px-3 focus:outline-none hover:bg-indigo-600 rounded-2xl lg:rounded">
                                             {/* TODO: Align Icon with Text */}
