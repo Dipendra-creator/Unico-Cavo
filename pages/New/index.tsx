@@ -1,40 +1,8 @@
-import NavBar from "../components/Navbar";
-import Footer from "../components/Footer";
+import NavBar from "components/Navbar";
+import Footer from "components/Footer";
+import Head from "next/head";
 
-function Card(props: {
-    productName: string
-    productPrice: string
-    imgSrc: string
-}) {
-    return (
-        <div className="flex justify-center items-center bg-blue-lightest w-full md:w-1/2 xl:w-1/3 p-6">
-            <div id="app" className="bg-white w-128 h-60 rounded shadow-md flex card text-grey-darkest">
-                <img className="w-1/2 h-full rounded-l-sm" src={props.imgSrc} alt="Room Image"/>
-                <div className="w-full flex flex-col">
-                    <div className="p-4 pb-0 flex-1">
-                        <h3 className="font-light mb-1 text-grey-darkest">{props.productName}</h3>
-
-                        <span className="text-5xl text-grey-darkest">{props.productPrice}</span>
-                        <div className="flex items-center mt-4">
-                            <div className="pr-2 text-xs">
-                                /90 meters
-                            </div>
-                        </div>
-                    </div>
-                    <a href={"tel: +919639695825"}>
-                        <div
-                            className="bg-gray-200 p-3 flex items-center justify-between transition hover:bg-grey-light">
-                                Contact Now
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-
-    )
-}
-
-export default function About() {
+export default function New() {
     return (
         <>
             <NavBar/>
@@ -52,7 +20,7 @@ export default function About() {
                             </a>
                         </div>
                     </nav>
-
+                    {/* TODO: Use Loader to load these files */}
                     <Card
                         productName={"LAN"}
                         productPrice={"₹3198"}
@@ -97,32 +65,46 @@ export default function About() {
                 </div>
             </section>
             <Footer/>
-            {/*<footer className="container mx-auto bg-white py-8 border-t border-gray-400">*/}
-            {/*    <div className="container flex px-3 py-8 ">*/}
-            {/*        <div className="w-full mx-auto flex flex-wrap">*/}
-            {/*            <div className="flex w-full lg:w-1/2 ">*/}
-            {/*                <div className="px-3 md:px-0">*/}
-            {/*                    <h3 className="font-bold text-gray-900">About</h3>*/}
-            {/*                    <p className="py-4">*/}
-            {/*                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vel mi ut felis*/}
-            {/*                        tempus commodo nec id erat. Suspendisse consectetur dapibus velit ut lacinia.*/}
-            {/*                    </p>*/}
-            {/*                </div>*/}
-            {/*            </div>*/}
-            {/*            <div className="flex w-full lg:w-1/2 lg:justify-end lg:text-right">*/}
-            {/*                <div className="px-3 md:px-0">*/}
-            {/*                    <h3 className="font-bold text-gray-900">Social</h3>*/}
-            {/*                    <ul className="list-reset items-center pt-3">*/}
-            {/*                        <li>*/}
-            {/*                            <a className="inline-block no-underline hover:text-black hover:underline py-1"*/}
-            {/*                               href="#">Add social links</a>*/}
-            {/*                        </li>*/}
-            {/*                    </ul>*/}
-            {/*                </div>*/}
-            {/*            </div>*/}
-            {/*        </div>*/}
-            {/*    </div>*/}
-            {/*</footer>*/}
+        </>
+    )
+}
+
+function Card(props: {
+    productName: string
+    productPrice: string
+    imgSrc: string
+}) {
+    return (
+        <>
+            <Head>
+                <title>Products</title>
+                <meta name="description"
+                      content="Unico Cavo is a cable company established in Aligarh to serve clients across India"/>
+                <meta property="og:title" content="Unico Cavo " key="title"/>
+            </Head>
+            <div className="flex justify-center items-center bg-blue-lightest w-full md:w-1/2 xl:w-1/3 p-6">
+                <div id="app" className="bg-white w-128 h-60 rounded shadow-md flex card text-grey-darkest">
+                    <img className="w-1/2 h-full rounded-l-sm" src={props.imgSrc} alt="Room Image"/>
+                    <div className="w-full flex flex-col">
+                        <div className="p-4 pb-0 flex-1">
+                            <h3 className="font-light mb-1 text-grey-darkest">{props.productName}</h3>
+
+                            <span className="text-5xl text-grey-darkest">{props.productPrice}</span>
+                            <div className="flex items-center mt-4">
+                                <div className="pr-2 text-xs">
+                                    /90 meters
+                                </div>
+                            </div>
+                        </div>
+                        <a href={"tel: +919639695825"}>
+                            <div
+                                className="bg-gray-200 p-3 flex items-center justify-between transition hover:bg-grey-light">
+                                Contact Now
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </>
     )
 }

@@ -1,7 +1,7 @@
-import NavBar from "./components/Navbar";
-import Main from './components/Main';
-import Footer from "./components/Footer";
-import Contact from "./components/Contact";
+import NavBar from "components/Navbar";
+import Main from 'components/Main';
+import Footer from "components/Footer";
+import Contact from "components/Contact";
 
 import Head from 'next/head'
 // Home Page
