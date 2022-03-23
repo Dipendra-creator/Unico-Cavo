@@ -1,6 +1,3 @@
-import 'react-awesome-slider/dist/styles.css';
-import 'react-awesome-slider/dist/custom-animations/cube-animation.css';
-
 import Image from "next/image"
 
 import wire1 from "@/images/wire1.webp"
